@@ -8003,34 +8003,3 @@ div.elementor-widget-heading.elementor-widget-heading .elementor-heading-title {
     text-decoration: none;
     border-radius: 4px;
 }
-
-
-
-
-
-/* Custom Checkbox Styling */
-.subscribe-inner-form input[type="checkbox"] {
-    display: none; /* Hide the default checkbox */
-}
-
-.subscribe-inner-form input[type="checkbox"] + span {
-    width: 18px;
-    height: 18px;
-    border: 2px solid #4CAF50; /* Customize border color */
-    border-radius: 4px;
-    display: inline-block;
-    position: relative;
-    cursor: pointer;
-}
-
-/* Checkmark styling when checkbox is checked */
-.subscribe-inner-form input[type="checkbox"]:checked + span:before {
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background-color: #4CAF50; /* Customize checkmark color */
-    top: 2px;
-    left: 2px;
-    border-radius: 2px;
-}
