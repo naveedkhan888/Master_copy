@@ -947,7 +947,7 @@ td {
   -moz-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   -ms-transition: all 0.3s linear;
-  font-size: 14px;
+  font-size: 18px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
@@ -960,7 +960,7 @@ td {
   white-space: nowrap;
   vertical-align: middle;
   font-family: "Bebas Neue", sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   text-align: center;
   background: #C19977;
   cursor: pointer;
@@ -1315,11 +1315,15 @@ a:hover, a:active {
 
 .main-navigation ul {
   font-family: "Bebas Neue", sans-serif;
-  font-weight: 600;
-  font-size: 14px;
+  font-weight: 400;
+  font-size: 18px;
   list-style: none;
   margin: 0px 0px;
   padding: 0px 0px;
+}
+
+.main-navigation ul .sub-menu {
+  font-family: "Open Sans", sans-serif;
 }
 
 .main-navigation > ul {
@@ -6562,7 +6566,6 @@ object {
 .features-service-wrapper .features-service-item .features-service-content .features-service-title h4 {
   color: #fff;
   margin-bottom: 0;
-  font-weight: 600;
 }
 .features-service-wrapper .features-service-item .features-service-content .features-service-title span {
   font-size: 24px;
