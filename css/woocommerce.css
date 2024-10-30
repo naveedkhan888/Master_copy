@@ -889,8 +889,8 @@ WooCommerce styles override
 .woocommerce-mini-cart__buttons a.button.wc-forward {
   color: #fff;
   font-family: "Bebas Neue", sans-serif;
-  font-size: 13px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 400;
   border-radius: 0;
   background-color: #C19977;
   text-transform: uppercase;
