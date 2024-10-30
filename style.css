@@ -364,31 +364,43 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
   margin: 0 0 20px;
   color: #0E1317;
-  font-style: italic;
+  font-style: normal;
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 3.353em;
+  line-height: 1em;
+  letter-spacing: 0px;
 }
 
 h2 {
-  font-size: 42px;
+  font-size: 2.765em;
+  line-height: 1.021em;
+  letter-spacing: 0.75px;
 }
 
 h3 {
-  font-size: 36px;
+  font-size: 2.059em;
+  line-height: 1.086em;
+  letter-spacing: 0.5px;
 }
 
 h4 {
-  font-size: 30px;
+  font-size: 1.647em;
+  line-height: 1.214em;
+  letter-spacing: 0.55px;
 }
 
 h5 {
-  font-size: 24px;
+  font-size: 1.412em;
+  line-height: 1.208em;
+  letter-spacing: 0.58px;
 }
 
 h6 {
-  font-size: 20px;
+  font-size: 1.118em;
+  line-height: 1.474em;
+  letter-spacing: 0.35px;
 }
 
 @media (max-width: 767px) {
@@ -2991,7 +3003,7 @@ a:hover, a:active {
 }
 .widget .tagcloud a {
   color: #717171;
-  background: transparent;
+  background: #f7f7f7;
   font-size: 12px !important;
   font-family: "Bebas Neue", sans-serif;
   text-transform: uppercase;
@@ -3002,7 +3014,7 @@ a:hover, a:active {
   line-height: 1;
   display: inline-block;
   vertical-align: middle;
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.15);
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
