@@ -799,7 +799,7 @@ html {
 }
 
 html, body {
-  background: #0E1317; /* Fallback for when there is no custom background color defined. */
+   /* Fallback for when there is no custom background color defined. */
 }
 
 hr {
