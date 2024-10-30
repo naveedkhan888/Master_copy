@@ -2071,7 +2071,7 @@ a:hover, a:active {
   -ms-transition: all 0.3s linear;
 }
 .post-box .post-inner {
-  background: #090C0F;
+  background: #fff;
   margin-bottom: 60px;
   overflow: hidden;
   -webkit-border-radius: 5px;
@@ -2083,7 +2083,6 @@ a:hover, a:active {
 }
 .post-box p {
   margin-bottom: 0;
-  color: #9f9e9e;
 }
 .post-box .entry-media {
   position: relative;
@@ -2132,16 +2131,16 @@ a:hover, a:active {
   font-family: "Merriweather", sans-serif;
   font-weight: 600;
   font-size: 13px;
-  color: #ffffff2e;
+  color: #818181;
   padding: 22px 40px;
-  border-top: 1px solid rgba(255, 255, 255, 0.10);
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
 }
 .post-box .entry-meta > span {
   margin-right: 0;
   display: inline-block;
 }
 .post-box .entry-meta a {
-  color: #9f9e9e;
+
 }
 .post-box .entry-meta a:hover {
   color: #C19977;
@@ -2154,9 +2153,8 @@ a:hover, a:active {
   position: absolute;
   right: 15px;
   top: 50%;
-  color: #9f9e9e;
-  background: transparent !important;
-  border: 1px solid transparent !important;
+  color: #131E30;
+  border: 1px solid transparent ;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -2171,7 +2169,6 @@ a:hover, a:active {
   line-height: 36px;
 }
 .post-box .entry-title a {
-  color: #ffffff;
   display: inline-block;
 }
 .post-box .entry-title a:hover {
@@ -3032,7 +3029,7 @@ a:hover, a:active {
 .widget-area .widget .widget-title {
   padding-bottom: 18px;
   margin-bottom: 35px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   position: relative;
 }
 .widget-area .widget .widget-title:before {
@@ -3052,7 +3049,7 @@ a:hover, a:active {
   bottom: -2px;
   width: 57px;
   height: 3px;
-  background: #0d1116;
+  background: #ffffff;
   z-index: 1;
 }
 .widget-area .widget ul:not(.recent-news) > li {
@@ -3066,7 +3063,6 @@ a:hover, a:active {
 }
 .widget-area .widget ul:not(.recent-news) > li a {
   font-weight: 600;
-  color: #ffffff;
   display: inline-block;
   position: relative;
   transition: all 0.35s linear;
@@ -3172,7 +3168,7 @@ a:hover, a:active {
   font-weight: 500;
 }
 .widget .recent-news h6 a {
-  color: #ffffff;
+
 }
 .widget .recent-news .post-on {
   font-family: "Merriweather", sans-serif;
