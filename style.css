@@ -399,7 +399,7 @@ h5 {
 
 h6 {
   font-size: 1.118em;
-  line-height: 1.474em;
+  line-height: 1.2em;
   letter-spacing: 0.35px;
 }
 
@@ -1324,6 +1324,7 @@ a:hover, a:active {
 
 .main-navigation ul .sub-menu {
   font-family: "Open Sans", sans-serif;
+  font-weight: 600;
 }
 
 .main-navigation > ul {
@@ -1470,7 +1471,7 @@ a:hover, a:active {
 }
 
 .main-navigation ul li li a {
-  font-size: 14px;
+  font-size: 13px;
   line-height: 30px;
   color: #1a1b1e;
   text-align: left;
@@ -1916,7 +1917,7 @@ a:hover, a:active {
   margin-bottom: 0;
   font-size: 14px;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 400;
 }
 .page-header .breadcrumbs li {
   display: inline-block;
@@ -3178,9 +3179,8 @@ a:hover, a:active {
 }
 .widget .recent-news h6 {
   margin-bottom: 10px;
-  line-height: 24px;
-  font-size: 15px;
-  font-weight: 500;
+  line-height: 1.2em;
+  font-weight: 400;
 }
 .widget .recent-news h6 a {
 
@@ -3455,11 +3455,13 @@ object {
 .xp-heading > span {
   position: relative;
   display: inline-block;
-  font-size: 11px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 600;
   font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
+  letter-spacing: 0.58px;
   color: #C19977;
+
   margin-bottom: 10px;
 }
 .xp-heading > span.is_highlight {
