@@ -2434,7 +2434,7 @@ a:hover, a:active {
 }
 .blog-post .author-bio {
   overflow: hidden;
-  background: #080b0f;
+  background: #fff;
   padding: 40px;
   margin-bottom: 45px;
   -webkit-border-radius: 5px;
@@ -2900,7 +2900,7 @@ a:hover, a:active {
   box-shadow: 8px 8px 30px 0 rgba(0, 0, 0, 0.12);
   -webkit-box-shadow: 8px 8px 30px 0 rgba(0, 0, 0, 0.12);
   -moz-box-shadow: 8px 8px 30px 0 rgba(0, 0, 0, 0.12);
-  background: #080b0f;
+  background: #fff;
 }
 .comment-respond .comment-reply-title {
   margin-bottom: 10px;
