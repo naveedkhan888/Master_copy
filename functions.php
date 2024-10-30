@@ -136,7 +136,7 @@ function restobar_fonts_url() {
 	}
 
 	if ( !isset( $second_font['font-family'] ) || $second_font['font-family'] == '' ) {
-		$font_families[] = 'Merriweather:300,300i,400,400i,700,700i,900,900i';
+		$font_families[] = 'Bebas Neue:400';
 	}
 
 	if ( $font_families ) {
