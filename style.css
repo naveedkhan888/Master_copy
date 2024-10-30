@@ -1107,7 +1107,6 @@ textarea:focus {
 }
 
 select {
-  font-family: "Bebas Neue", sans-serif;
   font-size: 14px;
   border: 1px solid #dbdbdb;
   outline: none;
@@ -4673,8 +4672,8 @@ object {
   display: flex;
 }
 .tab-titles .title-item {
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 400;
   text-transform: uppercase;
   display: inline-block;
   vertical-align: middle;
