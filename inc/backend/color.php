@@ -182,7 +182,6 @@ if(!function_exists('restobar_color_scheme')){
 			.widget .tagcloud a:hover,
 			.widget-area .widget ul:not(.recent-news) > li a:hover,
 			.widget-area .widget_categories ul li a:hover + span.posts-count,.widget-area .widget_product_categories ul li a:hover + span.posts-count,.widget-area .widget_archive ul li a:hover + span.posts-count,
-			.xp-heading > span,
 			.icon-box .icon-main,
 			.icon-box-grid .icon-box .icon-main,
 			.icon-box-grid .icon-box .content-box .title-box a:hover,
