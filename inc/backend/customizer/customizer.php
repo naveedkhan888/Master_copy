@@ -1094,14 +1094,14 @@ function restobar_customize_settings() {
             'type'     => 'color',
             'label'    => esc_html__( 'Heading Color', 'restobar' ),
             'section'  => 'color_scheme',
-            'default'  => '#131E30',
+            'default'  => '#191717',
             'priority' => 10,
         ),
         'btn_hover_dark'   => array(
             'type'     => 'color',
             'label'    => esc_html__( 'Button Hover & Dark', 'restobar' ),
             'section'  => 'color_scheme',
-            'default'  => '#131E30',
+            'default'  => '#191717',
             'priority' => 10,
         ),
 

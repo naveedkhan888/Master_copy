@@ -2177,7 +2177,7 @@ a:hover, a:active {
   position: absolute;
   right: 15px;
   top: 50%;
-  color: #131E30;
+  color: #191717;
   border: 1px solid transparent;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -2264,7 +2264,7 @@ a:hover, a:active {
   font-weight: 500;
   font-family: "DM Sans", sans-serif;
   line-height: 36px;
-  color: #131E30;
+  color: #191717;
 }
 .post-box .quote-box .quote-text span {
   font-size: 14px;
@@ -3086,7 +3086,7 @@ a:hover, a:active {
 }
 .widget-area .widget ul:not(.recent-news) > li a {
   font-weight: 600;
-  color: #131E30;
+  color: #191717;
   display: inline-block;
   position: relative;
   transition: all 0.35s linear;

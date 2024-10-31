@@ -6,7 +6,7 @@ if(!function_exists('restobar_color_scheme')){
 	  	$color_scheme = '';
 
 	  	//Heading Color
-	  	if( restobar_get_option('heading_color') != '#131E30' ){
+	  	if( restobar_get_option('heading_color') != '#191717' ){
 			$color_scheme = 
 			'
 			/****Heading Color****/
@@ -24,7 +24,7 @@ if(!function_exists('restobar_color_scheme')){
 		}
 
 		//Button Hover and Dark Color
-	  	if( restobar_get_option('btn_hover_dark') != '#131E30' ){
+	  	if( restobar_get_option('btn_hover_dark') != '#191717' ){
 			$color_scheme = 
 			'
 			/****Secondary Color****/
