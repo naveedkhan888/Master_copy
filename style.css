@@ -1547,10 +1547,10 @@ a:hover, a:active {
   content: "\f100";
   font-size: 9px;
   line-height: 1;
-  color: #b2b2b2;
   font-weight: 400;
 }
-.main-navigation ul > li.menu-item-has-children:hover > a {
+.main-navigation ul > li.menu-item-has-children:hover > a, 
+.main-navigation ul > li.current_page_item > a::after {
   color: #C19977;
 }
 .main-navigation ul > li.menu-item-has-children:hover > a:after {
@@ -6436,7 +6436,7 @@ object {
     width: 100%;
     padding: 11px 24px; 
     margin-top: 0;
-    border: 1px solid rgba(255, 255, 255, 0.15); 
+    border: 1px solid rgba(0, 0, 0, 0.15); 
     border-radius: 3px; 
     font-size: 14px; 
     color: #ffffff; 

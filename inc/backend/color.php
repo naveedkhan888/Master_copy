@@ -216,6 +216,7 @@ if(!function_exists('restobar_color_scheme')){
 			.elementor-widget-icon.elementor-view-framed .elementor-icon,
 			.elementor-widget-icon.elementor-view-default .elementor-icon,
 			.main-navigation ul > li.menu-item-has-children:hover > a:after,
+			.main-navigation ul > li.current_page_item > a::after, 
 			.main-navigation ul > li.menu-item-has-children > a:hover:after{
 				color:'.restobar_get_option('main_color').' !important;
 			}
