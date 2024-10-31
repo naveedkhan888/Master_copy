@@ -10,23 +10,6 @@ if(!function_exists('restobar_color_scheme')){
 			$color_scheme = 
 			'
 			/****Heading Color****/
-			a { color: '.restobar_get_option('heading_color').';}
-			.icon-box .title-box a,
-			.xp-switcher > span,
-			.woocommerce table.shop_table,
-			.post-box .entry-meta .btn-details,
-			.xp-counter-2 .c-number,
-			.panel-btn i,
-			.xp-tabs .tab-link,
-			.xp-accordions .acc-item .acc-toggle,
-			.widget .recent-news h6 a,
-			.widget-area .widget ul:not(.recent-news) > li a,
-			.xptf-cta-header .toggle_search i,
-			.xp-minicart:hover,
-			.xp-minicart:visited,
-			.xp-minicart:focus,
-			.xp-minicart,
-			.mmenu-toggle button,
 			h1,
 			h2,
 			h3,
