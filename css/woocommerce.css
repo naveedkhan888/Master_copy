@@ -20,7 +20,6 @@ WooCommerce styles override
 }
 
 .woocommerce .woocommerce-result-count {
-  color: #ffffff;
   font-size: 14px;
   margin: 14px 0px 0px 0px;
 }
@@ -94,9 +93,6 @@ WooCommerce styles override
   margin-top: 20px;
   margin-bottom: 3px;
   padding: 0px;
-}
-.woocommerce ul.products li.product .woocommerce-loop-product__title a, .woocommerce-page ul.products li.product .woocommerce-loop-product__title a {
-  color: #ffffff;
 }
 .woocommerce ul.products li.product .price, .woocommerce-page ul.products li.product .price {
   font-weight: 600;
@@ -469,7 +465,7 @@ WooCommerce styles override
 }
 
 .woocommerce-cart-form table, .woocommerce-cart-form th, .woocommerce-cart-form td {
-  border: 0px solid #eee;
+  border: 1px solid #eee;
 }
 .woocommerce form .form-row label {
   color: #fff;
@@ -497,7 +493,6 @@ WooCommerce styles override
   border-top: 1px solid rgba(255, 255, 255, 0.15);
 }
 .woocommerce table.shop_table td.product-name a {
-  color: #ffffff;
   font-size: 16px;
   font-weight: 600;
 }
@@ -576,7 +571,7 @@ WooCommerce styles override
 #add_payment_method table.cart td.actions .coupon .input-text,
 .woocommerce-cart table.cart td.actions .coupon .input-text,
 .woocommerce-checkout table.cart td.actions .coupon .input-text {
-  border-color: rgba(255, 255, 255, 0.15);
+  border-color: rgba(0, 0, 0, 0.15);
   color: #7e7e7e;
 }
 
@@ -797,17 +792,7 @@ WooCommerce styles override
   font-weight: 600;
   line-height: 22px;
 }
-.woocommerce .site section.widget ul.product_list_widget li a:not(.remove), 
-.woocommerce section.widget .total strong, 
-.woocommerce section.widget_shopping_cart .cart_list .quantity {
-  color: #ffffff;
-}
-.woocommerce-noreviews {
-  color: #fff;
-}
-.woocommerce-product-details__short-description ul li {
-  color: #fff;
-}
+
 .woocommerce .site ul.product_list_widget li a:not(.remove):hover {
   color: #C19977;
 }

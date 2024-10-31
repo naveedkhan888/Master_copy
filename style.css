@@ -1089,7 +1089,7 @@ input[type=datetime-local],
 input[type=color],
 textarea {
   background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.15);
   padding: 11px 24px;
   box-sizing: border-box;
   outline: none;
