@@ -193,13 +193,6 @@ add_action('wp_ajax_loadmore', 'restobar_loadmore_ajax_handler'); // wp_ajax_{ac
 add_action('wp_ajax_nopriv_loadmore', 'restobar_loadmore_ajax_handler'); // wp_ajax_nopriv_{action}
 
 function restobar_loadmore_ajax_handler(){
-
-	// Verify nonce
-    if ( !isset($_POST['nonce']) || !wp_verify_nonce($_POST['nonce'], 'restobar_loadmore_nonce') ) {
-        wp_send_json_error('Invalid nonce');
-        die();
-    }
-    
 	$offset  = (isset($_POST['offset'])) ? $_POST['offset'] : 0;
 	$cat     = (isset($_POST['cat'])) ? $_POST['cat'] : 0;
 	$ppp     = (isset($_POST['ppp'])) ? $_POST['ppp'] : 3;
