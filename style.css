@@ -984,7 +984,7 @@ td {
   background: #1e73be;
 }
 .xptf-btn.xptf-btn-dark {
-  background: #0E1317;
+  background: #1e73be;
 }
 .xptf-btn.xptf-btn-dark:hover, .xptf-btn.xptf-btn-dark:focus {
   background: #C19977;
@@ -3245,7 +3245,7 @@ a:hover, a:active {
   font-size: 21px;
 }
 .search-form .search-submit:hover {
-  background: #0E1317;
+  background: #1e73be;
 }
 
 .author-widget_wrapper {

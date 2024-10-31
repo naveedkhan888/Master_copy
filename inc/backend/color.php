@@ -108,9 +108,7 @@ if(!function_exists('restobar_color_scheme')){
 			.error-404 .page-content form button:hover,
 			.woocommerce ul.products li.product .added_to_cart, .woocommerce ul.products li.product .product_type_grouped, .woocommerce-page ul.products li.product .added_to_cart, .woocommerce-page ul.products li.product .product_type_grouped,
 			.woocommerce #respond input#submit.alt, .woocommerce a.button.alt,.woocommerce button.button.alt, .woocommerce input.button.alt,.woocommerce #respond input#submit, .woocommerce a.button,.woocommerce input.button, .woocommerce button.button.alt.disabled,
-			.woocommerce button.button,
-			.woocommerce-mini-cart__buttons a.button.wc-forward,
-			.woocommerce-mini-cart__buttons a.button.wc-forward:hover{ background: '.restobar_get_option('main_color').'; }
+			.woocommerce button.button{ background: '.restobar_get_option('main_color').'; }
 			.slide-rev-subtitle {
 				background: '.restobar_get_option('main_color').' !important;
 			}

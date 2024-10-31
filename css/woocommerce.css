@@ -885,10 +885,10 @@ WooCommerce styles override
   border-radius: 3px;
 }
 .woocommerce-mini-cart__buttons a.button.wc-forward:hover {
-  background: #C19977;
+  background: #1e73be;
 }
 .woocommerce-mini-cart__buttons a.button.checkout {
-  background-color: #0E1317;
+  background-color: #1e73be;
   color: #fff;
 }
 
