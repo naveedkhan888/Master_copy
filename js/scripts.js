@@ -176,7 +176,6 @@
 				'ppp'	: more,
 				'cat'	: cat,
 				'offset': offset,
-				'nonce' : restobar_loadmore_params.nonce // Pass nonce here
 			},
 			type : 'POST',
 			beforeSend : function ( xhr ) {
