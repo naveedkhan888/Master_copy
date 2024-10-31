@@ -8015,3 +8015,8 @@ div.elementor-widget-heading.elementor-widget-heading .elementor-heading-title {
 
 
 
+
+.xptf-btn.xptf-btn-dark, .woocommerce button.button:hover, .post-box .post-cat a:hover, .search-form .search-submit:hover, .woocommerce-mini-cart__buttons a.button.checkout.wc-forward, .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover, .woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce input.button:hover, .woocommerce button.button.alt.disabled:hover, .xptf-btn:hover, .woocommerce ul.products li.product .add_to_cart_button:hover, .woocommerce-page ul.products li.product .add_to_cart_button:hover, .xptf-btn:focus {
+  background: #1e73be;
+}
+
