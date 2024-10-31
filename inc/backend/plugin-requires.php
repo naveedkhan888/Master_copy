@@ -35,12 +35,12 @@ function restobar_register_required_plugins() {
             'slug'               => 'mailchimp-for-wp',
             'required'           => true,
 		),
-		//array(
-            //'name'               => esc_html__( 'XP Portfolio', 'restobar' ), // The plugin name.
-            //'slug'               => 'xp_portfolio', // The plugin slug (typically the folder name).
-            //'source'             => esc_url($protocol.'://dpsample.com/xp_portfolio.zip'), // The plugin source.
-            //'required'           => true, // If false, the plugin is only 'recommended' instead of required.
-        //),
+		array(
+            'name'               => esc_html__( 'XP Portfolio', 'restobar' ), // The plugin name.
+            'slug'               => 'xp_portfolio', // The plugin slug (typically the folder name).
+            'source'             => esc_url($protocol.'://dpsample.com/xp_portfolio.zip'), // The plugin source.
+            'required'           => true, // If false, the plugin is only 'recommended' instead of required.
+        ),
         array(            
             'name'               => esc_html__( 'XP One Click Demo Content', 'restobar' ), // The plugin name.
             'slug'               => 'soo-demo-importer', // The plugin slug (typically the folder name).
