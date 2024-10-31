@@ -231,16 +231,12 @@ WooCommerce styles override
 #order_review_heading {
   margin-top: 30px;
 }
-.woocommerce-info .showcoupon {
-  color: #bebebe;
-}
+
 
 .woocommerce-error, .woocommerce-info, .woocommerce-message {
-  background-color: #1A2129;
+  background-color: #EFF6FF;
 }
-.woocommerce-error, .woocommerce-info, .woocommerce-message {
-  color: #ffffff;
-}
+
 
 @media (max-width: 479px) {
   .woocommerce .woocommerce-result-count,
@@ -468,25 +464,24 @@ WooCommerce styles override
   border: 1px solid #eee;
 }
 .woocommerce form .form-row label {
-  color: #fff;
+
 }
 
 .woocommerce table.shop_table {
   font-family: "DM Sans", sans-serif;
   font-weight: 600;
-  color: #ffffff;
+  color: #131E30;
   border: none;
   border-collapse: collapse;
 }
 .woocommerce table.shop_table.cart th {
-  background: #191f26;
+  background: #f5f5f5;
   text-transform: uppercase;
 }
 .woocommerce table.shop_table th {
   font-weight: 600;
   padding-top: 15px;
   padding-bottom: 15px;
-  color: #fff;
 }
 .woocommerce table.shop_table td {
   padding: 15px 12px;
