@@ -5337,10 +5337,22 @@ object {
   font-size: 30px;
   font-weight: 600;
 }
+
+.project-slider .projects-box .portfolio-info h5 a {
+  
+}
+
 .project-slider .projects-box .portfolio-info h5 a {
   color: #0E1317;
   background: #fff;
   padding: 5px 20px;
+  transform: translateX(-101%);
+  transition: all 0.3s ease;
+}
+
+.project-slider .projects-box:hover .portfolio-info h5 a {
+  transform: translateX(0);
+  transition: all 0.5s ease 0s;
 }
 .project-slider .projects-box .portfolio-info .portfolio-cates {
   color: #e9e9e9;
