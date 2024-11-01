@@ -5333,7 +5333,7 @@ object {
   z-index: 1;
 }
 .project-slider .projects-box .portfolio-info h5 {
-  margin-bottom: 15px;
+  margin-bottom: 0;
   font-size: 30px;
   font-weight: 600;
 }
