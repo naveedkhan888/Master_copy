@@ -5373,6 +5373,7 @@ object {
   display: inline;
   padding: 5px 20px;
   background: #fff;
+  display: inline-block;
   transform: translateX(-101%);
   transition: all 0.3s ease;
   transition-delay: 50ms;
