@@ -363,7 +363,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 1.2;
   margin: 0 0 20px;
-  color: #0E1317;
+  color: #1a1b1e;
 }
 
 
@@ -430,7 +430,7 @@ blockquote {
   font-family: "DM Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
-  color: #0E1317;
+  color: #1a1b1e;
   padding-top: 73px;
   text-align: center;
   font-size: 22px;
@@ -507,7 +507,7 @@ mark, ins {
 }
 
 .text-dark {
-  color: #0E1317;
+  color: #1a1b1e;
 }
 
 .text-light {
@@ -664,7 +664,7 @@ mark, ins {
   line-height: 38px;
   width: 38px;
   height: 38px;
-  color: #0E1317;
+  color: #1a1b1e;
   background: rgba(220, 219, 219, 0.5);
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -745,7 +745,7 @@ mark, ins {
   width: 45px;
   height: 45px;
   line-height: 1;
-  background: #0E1317;
+  background: #1a1b1e;
   transition: all 0.3s linear;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
@@ -998,7 +998,7 @@ td {
 }
 
 .xptf-btn-dark {
-  background: #0E1317;
+  background: #1a1b1e;
 }
 .xptf-btn-dark:visited {
   color: #fff;
@@ -1013,7 +1013,7 @@ td {
   color: #C19977;
 }
 .xptf-btn-light:visited {
-  color: #0E1317;
+  color: #1a1b1e;
 }
 .xptf-btn-light:hover, .xptf-btn-light:focus {
   color: #fff;
@@ -1038,14 +1038,14 @@ td {
 }
 .xptf-btn.xptf-btn-border.xptf-btn-light:hover, .xptf-btn.xptf-btn-border.xptf-btn-light:focus {
   background: #fff;
-  color: #0E1317;
+  color: #1a1b1e;
 }
 .xptf-btn.xptf-btn-border.xptf-btn-dark {
-  border-color: #0E1317;
-  color: #0E1317;
+  border-color: #1a1b1e;
+  color: #1a1b1e;
 }
 .xptf-btn.xptf-btn-border.xptf-btn-dark:hover, .xptf-btn.xptf-btn-border.xptf-btn-dark:focus {
-  background: #0E1317;
+  background: #1a1b1e;
   color: #fff;
 }
 
@@ -1160,11 +1160,11 @@ a {
   -moz-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   -ms-transition: all 0.3s linear;
-  color: #0E1317;
+  color: #1a1b1e;
   text-decoration: none;
 }
 a:visited {
-  color: #0E1317;
+  color: #1a1b1e;
 }
 a:hover, a:focus, a:active {
   color: #C19977;
@@ -1750,7 +1750,7 @@ a:hover, a:active {
     left: 0;
     top: 50%;
     margin: -2px 0 0;
-    background: #0E1317;
+    background: #1a1b1e;
     height: 4px;
     padding: 0;
     border: none;
@@ -1770,7 +1770,7 @@ a:hover, a:active {
     top: -8px;
     width: 26px;
     height: 4px;
-    background: #0E1317;
+    background: #1a1b1e;
     -webkit-transform-origin: 1.5px center;
     transform-origin: 1.5px center;
     transition: all 0.3s ease;
@@ -1787,7 +1787,7 @@ a:hover, a:active {
     bottom: -8px;
     width: 26px;
     height: 4px;
-    background: #0E1317;
+    background: #1a1b1e;
     -webkit-transform-origin: 1.5px center;
     transform-origin: 1.5px center;
     transition: all 0.3s ease;
@@ -1839,7 +1839,7 @@ a:hover, a:active {
   .header_mobile .mobile_nav .mobile_mainmenu li a {
     padding: 9px 0;
     display: block;
-    color: #0E1317;
+    color: #1a1b1e;
     font-weight: 600;
     border-bottom: 1px solid #e5e5e5;
   }
@@ -1907,7 +1907,7 @@ a:hover, a:active {
   height: 400px;
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
-  background: #0E1317 center center no-repeat;
+  background: #1a1b1e center center no-repeat;
   background-size: cover;
 }
 .page-header .inner {
@@ -2148,7 +2148,7 @@ a:hover, a:active {
   border-radius: 12px;
 }
 .post-box .post-cat a:hover {
-  background: #0E1317;
+  background: #1a1b1e;
 }
 .post-box .entry-meta {
   position: relative;
@@ -2321,7 +2321,7 @@ a:hover, a:active {
 .page-pagination li a, .page-pagination li span {
   font-family: "DM Sans", sans-serif;
   font-size: 16px;
-  color: #0E1317;
+  color: #1a1b1e;
   background: #fff;
   font-weight: 700;
   height: 40px;
@@ -2504,7 +2504,7 @@ a:hover, a:active {
   font-family: "DM Sans", sans-serif;
   float: left;
   text-align: center;
-  background: #0E1317;
+  background: #1a1b1e;
   color: #fff;
   width: 40px;
   height: 40px;
@@ -2727,11 +2727,11 @@ a:hover, a:active {
   clear: both;
   padding-top: 25px;
   font-weight: 600;
-  color: #0E1317;
+  color: #1a1b1e;
 }
 
 .page-links a {
-  color: #0E1317;
+  color: #1a1b1e;
 }
 
 .page-links a:hover {
@@ -3041,7 +3041,7 @@ a:hover, a:active {
 }
 .widget table td#today {
   font-weight: 600;
-  color: #0E1317;
+  color: #1a1b1e;
 }
 
 .widget-area .widget {
@@ -3128,7 +3128,7 @@ a:hover, a:active {
 .widget-area .widget_product_categories ul li a,
 .widget-area .widget_archive ul li a {
   text-transform: uppercase;
-  color: #0E1317;
+  color: #1a1b1e;
   display: inline-block;
   padding-left: 15px;
   position: relative;
@@ -3303,7 +3303,7 @@ a:hover, a:active {
   line-height: 28px;
   cursor: pointer;
   margin-right: 7px;
-  background: #0E1317;
+  background: #1a1b1e;
   color: #fff;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -3556,7 +3556,7 @@ object {
   -ms-transition: all 0.3s linear;
 }
 .icon-box .title-box a {
-  color: #0E1317;
+  color: #1a1b1e;
 }
 .icon-box p:last-child {
   margin-bottom: 0;
@@ -4072,10 +4072,10 @@ object {
   border-color: transparent;
 }
 .icon-box-grid .icon-box:hover .title-box {
-  color: #0E1317;
+  color: #1a1b1e;
 }
 .icon-box-grid .icon-box:hover .title-box a {
-  color: #0E1317;
+  color: #1a1b1e;
 }
 .icon-box-grid .icon-box:hover .icon-main {
   color: #C19977;
@@ -4290,7 +4290,7 @@ object {
 .logos-carousel .owl-nav button.owl-next,
 .logos-carousel .owl-nav button.owl-prev {
   background: transparent;
-  color: #0E1317;
+  color: #1a1b1e;
   font-size: 21px;
 }
 .logos-carousel .owl-nav button.owl-next {
@@ -4367,7 +4367,7 @@ object {
 .xp-counter-2 .c-number {
   font-size: 48px;
   font-weight: 700;
-  color: #0E1317;
+  color: #1a1b1e;
   line-height: 1;
 }
 .xp-counter-2 p {
@@ -4546,7 +4546,7 @@ object {
   text-align: center;
   font-weight: 600;
   font-size: 24px;
-  color: #0E1317;
+  color: #1a1b1e;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -4615,7 +4615,7 @@ object {
   font-size: 14px;
   font-weight: 600;
   vertical-align: middle;
-  color: #0E1317;
+  color: #1a1b1e;
 }
 .xp-switcher .switch {
   margin: 0 15px;
@@ -4821,7 +4821,7 @@ object {
 }
 .xp-pricing-table .xptf-btn,
 .xp-pricing-table .xptf-btn:visited {
-  color: #0E1317;
+  color: #1a1b1e;
 }
 .xp-pricing-table .xptf-btn:hover,
 .xp-pricing-table .xptf-btn:visited:hover {
@@ -4923,7 +4923,7 @@ object {
   -ms-transition: all 0.3s linear;
 }
 .project_filters li a:focus, .project_filters li a:active {
-  color: #0E1317;
+  color: #1a1b1e;
 }
 .project_filters li a .filter-count {
   position: absolute;
@@ -5155,7 +5155,7 @@ object {
   padding: 0;
 }
 .projects-grid.style-2 div.portfolio-info .portfolio-info-inner h5 a {
-  color: #0E1317;
+  color: #1a1b1e;
 }
 .projects-grid.style-2 div.portfolio-info .portfolio-info-inner .portfolio-cates {
   padding: 0;
@@ -5343,7 +5343,7 @@ object {
 }
 
 .project-slider .projects-box .portfolio-info h5 a {
-  color: #0E1317;
+  color: #1a1b1e;
   background: #fff;
   padding: 5px 20px;
   transform: translateX(-101%);
@@ -5368,7 +5368,7 @@ object {
   margin-bottom: 0;
 }
 .project-slider .projects-box .portfolio-info .portfolio-cates a {
-  color: #0e1317;
+  color: #1a1b1e;
   line-height: 1;
   display: inline;
   padding: 5px 20px;
@@ -5672,7 +5672,7 @@ object {
   position: relative;
 }
 .xp-team h6 a:hover {
-  color: #0E1317;
+  color: #1a1b1e;
 }
 .fab {
   font-family: "fontawesome";
@@ -5692,7 +5692,7 @@ object {
   height: 40px;
   line-height: 40px;
   font-size: 14px;
-  background: #0E1317;
+  background: #1a1b1e;
   color: #fff;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -5701,7 +5701,7 @@ object {
 .team-1 .team-social span, .team-1 .team-social a:hover {
   cursor: pointer;
   background: #fff;
-  color: #0E1317;
+  color: #1a1b1e;
   font-weight: bold;
 }
 .team-1 .team-social span:before {
@@ -5733,7 +5733,7 @@ object {
   transform: rotate(45deg);
 }
 .team-1:hover .team-info {
-  background: #0E1317;
+  background: #1a1b1e;
 }
 .team-1:hover .team-info h6,
 .team-1:hover .team-info h6 a {
@@ -5854,7 +5854,7 @@ object {
 }
 .circle-social .team-social a svg {
   width: 12px;
-  fill: #0E1317;
+  fill: #1a1b1e;
   transition: all 0.3s linear;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
@@ -5914,7 +5914,7 @@ object {
   padding-bottom: 15px;
 }
 .member-info li span {
-  color: #0E1317;
+  color: #1a1b1e;
   font-family: "DM Sans", sans-serif;
   font-weight: 600;
 }
@@ -5956,7 +5956,7 @@ object {
   font-family: "DM Sans", sans-serif;
   font-size: 16px;
   font-weight: 600;
-  color: #0E1317;
+  color: #1a1b1e;
   padding: 9px 20px;
   background: #f6f6f6;
   border: 1px solid rgba(0, 0, 0, 0.15);
@@ -6014,7 +6014,7 @@ object {
   float: left;
   text-align: center;
   text-transform: uppercase;
-  color: #0E1317;
+  color: #1a1b1e;
   border-bottom: 3px solid #d7d7d7;
   transition: all 0.3s linear;
   -webkit-transition: all 0.3s linear;
@@ -6195,7 +6195,7 @@ object {
 .xp-testimonials-carousel-2 .owl-nav button.owl-prev,
 .xp-testimonials-carousel-2 .owl-nav button.owl-next {
   background: rgba(220, 219, 219, 0.5);
-  color: #0E1317;
+  color: #1a1b1e;
 }
 
 .dots-vertical .owl-dots {
@@ -6287,7 +6287,7 @@ object {
 }
 .xp-video-button > span {
   font-size: 14px;
-  color: #0E1317;
+  color: #1a1b1e;
   text-transform: uppercase;
   font-weight: 600;
   margin-left: 10px;
@@ -6416,7 +6416,7 @@ object {
 .wpcf7 div.wpcf7-validation-errors,
 .wpcf7 div.wpcf7-acceptance-missing {
   background: #f7e700;
-  color: #0E1317;
+  color: #1a1b1e;
 }
 
 .wpcf7-placeholder-light .wpcf7-form-control::-webkit-input-placeholder { /*WebKit browsers*/
@@ -6814,7 +6814,7 @@ body .elementor-widget:not(:last-child) {
 }
 
 div.elementor-widget-heading.elementor-widget-heading .elementor-heading-title {
-  color: #0E1317;
+  color: #1a1b1e;
   font-weight: 700;
   font-family: "DM Sans", sans-serif;
   line-height: 1.2;
@@ -6887,7 +6887,7 @@ div.elementor-widget-heading.elementor-widget-heading .elementor-heading-title {
   font-weight: 900;
   padding: 10px 13px;
   margin-top: 8px;
-  background: #0E1317;
+  background: #1a1b1e;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
@@ -7055,7 +7055,7 @@ div.elementor-widget-heading.elementor-widget-heading .elementor-heading-title {
   cursor: pointer;
 }
 .xptf-cta-header .toggle_search i {
-  color: #0E1317;
+  color: #1a1b1e;
   text-align: center;
   display: inline-block;
   vertical-align: middle;
@@ -7157,7 +7157,7 @@ div.elementor-widget-heading.elementor-widget-heading .elementor-heading-title {
   top: calc(100% + 12px);
   right: -30px;
   background: #fff;
-  color: #0E1317;
+  color: #1a1b1e;
   width: 342px;
   padding: 30px;
   box-shadow: 8px 8px 30px 0 rgba(0, 0, 0, 0.12);
@@ -7220,10 +7220,10 @@ div.elementor-widget-heading.elementor-widget-heading .elementor-heading-title {
 .xp-minicart {
   position: relative;
   display: inline-block;
-  color: #0E1317;
+  color: #1a1b1e;
 }
 .xp-minicart:hover, .xp-minicart:visited, .xp-minicart:focus {
-  color: #0E1317;
+  color: #1a1b1e;
 }
 .xp-minicart i:before {
   font-size: 22px;
@@ -7276,7 +7276,7 @@ div.elementor-widget-heading.elementor-widget-heading .elementor-heading-title {
   padding: 2px 10px 2px 0;
 }
 #lang_choice_wp-widget-polylang option {
-  color: #0E1317;
+  color: #1a1b1e;
   outline: none;
   padding: 10px;
 }
@@ -7294,7 +7294,7 @@ div.elementor-widget-heading.elementor-widget-heading .elementor-heading-title {
 }
 
 .header-mobile .is-stuck {
-  background-color: #0E1317;
+  background-color: #1a1b1e;
 }
 .is-fixed.is-stuck {
   box-shadow: 15px 15px 38px 0px rgba(0, 0, 0, 0.09);
@@ -7305,7 +7305,7 @@ div.elementor-widget-heading.elementor-widget-heading .elementor-heading-title {
   border: none;
   outline: none;
   padding: 0;
-  color: #0E1317;
+  color: #1a1b1e;
 }
 .mmenu-toggle button i:before {
   font-size: 21px;
@@ -7459,7 +7459,7 @@ div.elementor-widget-heading.elementor-widget-heading .elementor-heading-title {
   line-height: 1;
 }
 .panel-btn i {
-  color: #0E1317;
+  color: #1a1b1e;
   cursor: pointer;
 }
 .panel-btn i:before {
@@ -7500,7 +7500,7 @@ div.elementor-widget-heading.elementor-widget-heading .elementor-heading-title {
   position: absolute;
   right: 30px;
   top: 30px;
-  color: #0E1317;
+  color: #1a1b1e;
   font-size: 20px;
   width: 50px;
   height: 50px;
@@ -7698,7 +7698,7 @@ div.elementor-widget-heading.elementor-widget-heading .elementor-heading-title {
   margin: 10px 15px 0;
 }
 .error-404 .page-content form button {
-  background: #0E1317;
+  background: #1a1b1e;
 }
 .error-404 .page-content form button:hover {
   background: #C19977;
