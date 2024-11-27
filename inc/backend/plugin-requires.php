@@ -64,6 +64,11 @@ function restobar_register_required_plugins() {
             'slug'               => 'woocommerce',
             'required'           => true,
 		),
+		array(
+            'name'               => esc_html__( 'Qi Addons For Elementor', 'restobar' ),
+            'slug'               => 'qi-addons-for-elementor',
+            'required'           => true,
+		),
         
 	);
 	$config  = array(

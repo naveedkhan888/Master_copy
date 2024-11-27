@@ -210,12 +210,15 @@ if(!function_exists('restobar_color_scheme')){
 			.main-navigation > ul > li:hover > a,
 			.main-navigation ul li li a:hover,.main-navigation ul ul.sub-menu li.current-menu-item > a,.main-navigation ul ul.sub-menu li.current-menu-ancestor > a,
 			.main-navigation ul > li.menu-item-has-children:hover > a,
-			.elementor-widget-icon.elementor-view-framed .elementor-icon,
-			.elementor-widget-icon.elementor-view-default .elementor-icon,
 			.main-navigation ul > li.menu-item-has-children:hover > a:after,
 			.main-navigation ul > li.current_page_item > a::after, 
 			.main-navigation ul > li.menu-item-has-children > a:hover:after{
 				color:'.restobar_get_option('main_color').' !important;
+			}
+
+			.elementor-widget-icon.elementor-view-framed .elementor-icon, 
+			.elementor-widget-icon.elementor-view-default .elementor-icon{
+				color:'.restobar_get_option('main_color').';
 			}
 
 			/*Other*/
