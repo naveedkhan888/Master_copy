@@ -157,7 +157,7 @@ class Restobar_Heading_dual extends Widget_Base{
 			]
 		);
 
-		// Existing Subtitle Style Controls (unchanged)
+		//Subtitle
 		$this->add_control(
 			'heading_stitle',
 			[
@@ -176,8 +176,94 @@ class Restobar_Heading_dual extends Widget_Base{
 				'options' => self::get_subtitle_style(),
 			]
 		);
+		$this->add_responsive_control(
+			'line_width',
+			[
+				'label' => __( 'Width', 'restobar' ),
+				'type' => Controls_Manager::SLIDER,
+				'range' => [
+					'px' => [
+						'min' => 20,
+						'max' => 100,
+					],
+				],
+				'default' => [
+					'unit' => 'px',
+					'size' => 45,
+				],
+				'selectors' => [
+					'{{WRAPPER}} .xp-heading > span.is_line:before' => 'width: {{SIZE}}{{UNIT}};',
+					'{{WRAPPER}} .xp-heading > span.is_line' => 'padding-left: calc({{SIZE}}{{UNIT}} + 15px);',
+				],
+				'condition'	=> [
+					'subtitle_style'	=> 'is_line'
+				]
+			]
+		);
 
-		// Keep existing subtitle style controls...
+		$this->add_control(
+			'stitle_color',
+			[
+				'label' => __( 'Color', 'restobar' ),
+				'type' => Controls_Manager::COLOR,
+				'default' => '',
+				'selectors' => [
+					'{{WRAPPER}} .xp-heading > span' => 'color: {{VALUE}}; border-color: {{VALUE}};',
+					'{{WRAPPER}} .xp-heading > span.is_line:before' => 'background: {{VALUE}};',
+				]
+			]
+		);
+		$this->add_control(
+			'stitle_bg',
+			[
+				'label' => __( 'Background color', 'restobar' ),
+				'type' => Controls_Manager::COLOR,
+				'default' => '',
+				'selectors' => [
+					'{{WRAPPER}} .xp-heading > span' => 'background: {{VALUE}};',
+				],
+				'condition'	=> [
+					'subtitle_style'	=> 'is_highlight'
+				]
+			]
+		);
+		$this->add_control(
+			'stitle_border',
+			[
+				'label' => __( 'Border Color', 'restobar' ),
+				'type' => Controls_Manager::COLOR,
+				'default' => '',
+				'selectors' => [
+					'{{WRAPPER}} .xp-heading > span' => 'border-color: {{VALUE}};',
+				],
+				'condition'	=> [
+					'subtitle_style'	=> 'is_highlight'
+				]
+			]
+		);
+		$this->add_group_control(
+			Group_Control_Typography::get_type(),
+			[
+				'name' => 'stitle_typography',
+				'selector' => '{{WRAPPER}} .xp-heading > span',
+			]
+		);
+		$this->add_responsive_control(
+			'stitle_bottom_space',
+			[
+				'label' => __( 'Spacing', 'restobar' ),
+				'type' => Controls_Manager::SLIDER,
+				'range' => [
+					'px' => [
+						'min' => 0,
+						'max' => 100,
+					],
+				],
+				'selectors' => [
+					'{{WRAPPER}} .xp-heading > span' => 'margin-bottom: {{SIZE}}{{UNIT}};',
+				],
+			]
+		);
 
 		// First Parent Title Styling
 		$this->add_control(
@@ -239,7 +325,7 @@ class Restobar_Heading_dual extends Widget_Base{
 			]
 		);
 
-		// Main Title Styling (keep existing controls)
+		//Title
 		$this->add_control(
 			'heading_title',
 			[
@@ -248,8 +334,24 @@ class Restobar_Heading_dual extends Widget_Base{
 				'separator' => 'before',
 			]
 		);
-
-		// Keep existing main title color and typography controls...
+		$this->add_control(
+			'title_color',
+			[
+				'label' => __( 'Color', 'restobar' ),
+				'type' => Controls_Manager::COLOR,
+				'default' => '',
+				'selectors' => [
+					'{{WRAPPER}} .xp-heading .main-head' => 'color: {{VALUE}};',
+				]
+			]
+		);
+		$this->add_group_control(
+			Group_Control_Typography::get_type(),
+			[
+				'name' => 'title_typography',
+				'selector' => '{{WRAPPER}} .xp-heading .main-head',
+			]
+		);
 
 		$this->end_controls_section();
 	}
