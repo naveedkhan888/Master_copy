@@ -375,9 +375,9 @@ class Restobar_Heading_dual extends Widget_Base{
 			'<%1$s %2$s>%3$s %4$s %5$s</%1$s>', 
 			$settings['header_size'], 
 			$this->get_render_attribute_string( 'heading' ),
+			$title, 
 			(!empty($parent_title_1) ? '<span '.$this->get_render_attribute_string( 'parent_heading_1' ).'>' . $parent_title_1 . '</span>' : ''),
-			(!empty($parent_title_2) ? '<span '.$this->get_render_attribute_string( 'parent_heading_2' ).'>' . $parent_title_2 . '</span>' : ''),
-			$title
+			(!empty($parent_title_2) ? '<span '.$this->get_render_attribute_string( 'parent_heading_2' ).'>' . $parent_title_2 . '</span>' : '')
 		);
 		?>
 		<div class="xp-heading">
