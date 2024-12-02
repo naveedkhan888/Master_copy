@@ -363,8 +363,8 @@ class Restobar_Heading_dual extends Widget_Base{
 
 		$this->add_render_attribute( 'subtitle', 'class', $hl );
 		$this->add_render_attribute( 'heading', 'class', 'main-head' );
-		$this->add_render_attribute( 'parent_heading_1', 'class', 'parent-head parent-head-1' );
-		$this->add_render_attribute( 'parent_heading_2', 'class', 'parent-head parent-head-2' );
+		$this->add_render_attribute( 'parent_heading_1', 'class', 'parent-head hl-text parent-head-1' );
+		$this->add_render_attribute( 'parent_heading_2', 'class', 'parent-head hl-text parent-head-2' );
 
 		$title = $settings['title'];
 		$parent_title_1 = $settings['parent_title_1'];
