@@ -39,3 +39,4 @@ locate_template('/inc/backend/elementor/widgets/woocommerce-products.php', true,
 locate_template('/inc/backend/elementor/widgets/text-marquee.php', true, true);
 locate_template('/inc/backend/elementor/widgets/image-box-2.php', true, true);
 locate_template('/inc/backend/elementor/widgets/dynamic-title.php', true, true);
+locate_template('/inc/backend/elementor/widgets/heading_dual.php', true, true);
