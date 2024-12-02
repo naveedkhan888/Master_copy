@@ -1649,6 +1649,12 @@ a:hover, a:active {
   animation: stickySlideDown 0.65s cubic-bezier(0.23, 1, 0.32, 1) both;
 }
 
+.is-fixed {
+  -webkit-animation: stickySlideUp 0.65s cubic-bezier(0.23, 1, 0.32, 1) both;
+  -moz-animation: stickySlideUp 0.65s cubic-bezier(0.23, 1, 0.32, 1) both;
+  animation: stickySlideUp 0.65s cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+
 .is-fixed.is-stuck {
   position: fixed;
   left: 0;
