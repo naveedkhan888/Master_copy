@@ -43,20 +43,33 @@
     /* --------------------------------------------------
     * sticky header
     * --------------------------------------------------*/
-	$('.header-static .is-fixed').parent().append('<div class="header-clone"></div>');
-	$('.header-clone').height($('#site-header .is-fixed').outerHeight());
-	$('.header-static .header-clone').hide();	
-	$(window).on("scroll", function(){
-		var site_header = $('#site-header').outerHeight() + 1;	
-			
-		if ($(window).scrollTop() >= site_header) {	    	
-			$('.site-header .is-fixed').addClass('is-stuck');	
-			$('.header-static .header-clone').show();	
-		}else {
-			$('.site-header .is-fixed').removeClass('is-stuck');		              
-			$('.header-static .header-clone').hide();
-		}
-	});
+	// Append a clone of the header for spacing adjustment
+    $('.header-static .is-fixed').parent().append('<div class="header-clone"></div>');
+    
+    // Set the height of the header clone to match the fixed header
+    $('.header-clone').height($('#site-header .is-fixed').outerHeight());
+    $('.header-static .header-clone').hide();
+
+    let previousScroll = 0; // Store the previous scroll position
+
+    // Scroll event listener
+    $(window).on("scroll", function() {
+        var currentScroll = $(window).scrollTop(); // Current scroll position
+        var site_header = $('#site-header').outerHeight(); // Header height
+        
+        if (currentScroll > site_header && currentScroll < previousScroll) {
+            // Scrolling up: Add sticky class and show header clone
+            $('.site-header .is-fixed').addClass('is-stuck');
+            $('.header-static .header-clone').show();
+        } else if (currentScroll <= site_header || currentScroll > previousScroll) {
+            // Scrolling down or above the header: Remove sticky class and hide header clone
+            $('.site-header .is-fixed').removeClass('is-stuck');
+            $('.header-static .header-clone').hide();
+        }
+
+        // Update the previous scroll position
+        previousScroll = currentScroll;
+    });
 
     /* --------------------------------------------------
     * mobile menu
