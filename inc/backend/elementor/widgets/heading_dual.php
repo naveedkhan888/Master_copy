@@ -55,6 +55,22 @@ class Restobar_Heading_dual extends Widget_Base{
 			]
 		);
 
+
+		// Main Title
+		$this->add_control(
+			'title',
+			[
+				'label' => __( 'Main Title', 'restobar' ),
+				'type' => Controls_Manager::TEXT,
+				'dynamic' => [
+					'active' => true,
+				],
+				'default' => __( 'What we do', 'restobar' ),
+				'placeholder' => __( 'Enter your title', 'restobar' ),
+				'label_block' => true,
+			]
+		);
+
 		// First Parent Title
 		$this->add_control(
 			'parent_title_1',
@@ -81,21 +97,6 @@ class Restobar_Heading_dual extends Widget_Base{
 				],
 				'default' => __( 'Second', 'restobar' ),
 				'placeholder' => __( 'Enter second parent title', 'restobar' ),
-				'label_block' => true,
-			]
-		);
-
-		// Main Title
-		$this->add_control(
-			'title',
-			[
-				'label' => __( 'Main Title', 'restobar' ),
-				'type' => Controls_Manager::TEXT,
-				'dynamic' => [
-					'active' => true,
-				],
-				'default' => __( 'What we do', 'restobar' ),
-				'placeholder' => __( 'Enter your title', 'restobar' ),
 				'label_block' => true,
 			]
 		);
