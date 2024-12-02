@@ -55,17 +55,32 @@ class Restobar_Heading_dual extends Widget_Base{
 			]
 		);
 
-		// First Title (Parent Title)
+		// First Parent Title
 		$this->add_control(
-			'parent_title',
+			'parent_title_1',
 			[
-				'label' => __( 'Parent Title', 'restobar' ),
+				'label' => __( 'First Parent Title', 'restobar' ),
 				'type' => Controls_Manager::TEXT,
 				'dynamic' => [
 					'active' => true,
 				],
-				'default' => __( 'Our', 'restobar' ),
-				'placeholder' => __( 'Enter parent title', 'restobar' ),
+				'default' => __( 'First', 'restobar' ),
+				'placeholder' => __( 'Enter first parent title', 'restobar' ),
+				'label_block' => true,
+			]
+		);
+
+		// Second Parent Title
+		$this->add_control(
+			'parent_title_2',
+			[
+				'label' => __( 'Second Parent Title', 'restobar' ),
+				'type' => Controls_Manager::TEXT,
+				'dynamic' => [
+					'active' => true,
+				],
+				'default' => __( 'Second', 'restobar' ),
+				'placeholder' => __( 'Enter second parent title', 'restobar' ),
 				'label_block' => true,
 			]
 		);
@@ -162,26 +177,26 @@ class Restobar_Heading_dual extends Widget_Base{
 			]
 		);
 
-		// Existing subtitle style controls remain the same...
+		// Keep existing subtitle style controls...
 
-		// Parent Title Styling
+		// First Parent Title Styling
 		$this->add_control(
-			'heading_parent_title',
+			'heading_parent_title_1',
 			[
-				'label' => __( 'Parent Title', 'restobar' ),
+				'label' => __( 'First Parent Title', 'restobar' ),
 				'type' => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
 		);
 
 		$this->add_control(
-			'parent_title_color',
+			'parent_title_1_color',
 			[
 				'label' => __( 'Color', 'restobar' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}} .xp-heading .parent-head' => 'color: {{VALUE}};',
+					'{{WRAPPER}} .xp-heading .parent-head-1' => 'color: {{VALUE}};',
 				]
 			]
 		);
@@ -189,12 +204,42 @@ class Restobar_Heading_dual extends Widget_Base{
 		$this->add_group_control(
 			Group_Control_Typography::get_type(),
 			[
-				'name' => 'parent_title_typography',
-				'selector' => '{{WRAPPER}} .xp-heading .parent-head',
+				'name' => 'parent_title_1_typography',
+				'selector' => '{{WRAPPER}} .xp-heading .parent-head-1',
 			]
 		);
 
-		// Existing Main Title Styling Controls (unchanged)
+		// Second Parent Title Styling
+		$this->add_control(
+			'heading_parent_title_2',
+			[
+				'label' => __( 'Second Parent Title', 'restobar' ),
+				'type' => Controls_Manager::HEADING,
+				'separator' => 'before',
+			]
+		);
+
+		$this->add_control(
+			'parent_title_2_color',
+			[
+				'label' => __( 'Color', 'restobar' ),
+				'type' => Controls_Manager::COLOR,
+				'default' => '',
+				'selectors' => [
+					'{{WRAPPER}} .xp-heading .parent-head-2' => 'color: {{VALUE}};',
+				]
+			]
+		);
+
+		$this->add_group_control(
+			Group_Control_Typography::get_type(),
+			[
+				'name' => 'parent_title_2_typography',
+				'selector' => '{{WRAPPER}} .xp-heading .parent-head-2',
+			]
+		);
+
+		// Main Title Styling (keep existing controls)
 		$this->add_control(
 			'heading_title',
 			[
@@ -204,7 +249,7 @@ class Restobar_Heading_dual extends Widget_Base{
 			]
 		);
 
-		// Existing title color and typography controls remain the same...
+		// Keep existing main title color and typography controls...
 
 		$this->end_controls_section();
 	}
@@ -216,17 +261,20 @@ class Restobar_Heading_dual extends Widget_Base{
 
 		$this->add_render_attribute( 'subtitle', 'class', $hl );
 		$this->add_render_attribute( 'heading', 'class', 'main-head' );
-		$this->add_render_attribute( 'parent_heading', 'class', 'parent-head' );
+		$this->add_render_attribute( 'parent_heading_1', 'class', 'parent-head parent-head-1' );
+		$this->add_render_attribute( 'parent_heading_2', 'class', 'parent-head parent-head-2' );
 
 		$title = $settings['title'];
-		$parent_title = $settings['parent_title'];
+		$parent_title_1 = $settings['parent_title_1'];
+		$parent_title_2 = $settings['parent_title_2'];
 
 		$title_html = sprintf( 
-			'%1$s<%2$s %3$s>%4$s</%2$s>', 
-			(!empty($parent_title) ? '<span '.$this->get_render_attribute_string( 'parent_heading' ).'>' . $parent_title . '</span> ' : ''),
+			'<%1$s %2$s>%3$s %4$s %5$s</%1$s>', 
 			$settings['header_size'], 
-			$this->get_render_attribute_string( 'heading' ), 
-			$title 
+			$this->get_render_attribute_string( 'heading' ),
+			(!empty($parent_title_1) ? '<span '.$this->get_render_attribute_string( 'parent_heading_1' ).'>' . $parent_title_1 . '</span>' : ''),
+			(!empty($parent_title_2) ? '<span '.$this->get_render_attribute_string( 'parent_heading_2' ).'>' . $parent_title_2 . '</span>' : ''),
+			$title
 		);
 		?>
 		<div class="xp-heading">
