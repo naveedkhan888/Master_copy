@@ -8036,3 +8036,79 @@ div.elementor-widget-heading.elementor-widget-heading .elementor-heading-title {
     border-radius: 4px;
 }
 
+
+
+
+
+
+
+
+
+
+
+.xp-circular-text {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.xp-circular-text .center-icon {
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.xp-circular-text .circle-item {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    background-color: #f0f0f0;
+    transform: 
+        rotate(var(--item-angle)) 
+        translate(180px) 
+        rotate(calc(-1 * var(--item-angle)));
+}
+
+.xp-circular-text .circle-item:hover {
+    transform: 
+        rotate(var(--item-angle)) 
+        translate(180px) 
+        rotate(calc(-1 * var(--item-angle)))
+        scale(1.1);
+    z-index: 5;
+}
+
+.xp-circular-text .circle-item-icon {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.xp-circular-text .circle-item-text {
+    text-align: center;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.xp-circular-text .circle-item:hover .circle-item-text {
+    opacity: 1;
+}
