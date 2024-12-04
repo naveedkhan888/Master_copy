@@ -6744,7 +6744,7 @@ object {
 .mc4wp-form .custom-checkbox {
   padding-top: 7px;
 }
-.light_form .mc4wp-form .subscribe-inner-form input{
+.light_form .mc4wp-form-fields .subscribe-inner-form input[type="email"] {
   border-color: rgba(0, 0, 0, 0.3);
   color: #1a1b1e;
 }
