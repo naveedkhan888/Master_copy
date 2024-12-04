@@ -6560,6 +6560,196 @@ object {
     color: #ffffff;
 }
 
+
+
+/* Icon Form */
+.form_icon .main_wraper{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+
+.form_icon .main_wraper i{
+  position: absolute;
+  left: 0;
+  top: 13px;
+  display: block;
+  color: rgba(255,255,255,0.5);
+  font-size: 20px;
+  z-index: 1;
+}
+
+.form_icon .main_wraper textarea,
+.form_icon .main_wraper input.wpcf7-form-control{
+  padding: 15px 10px 15px 36px;
+}
+
+.form_icon .main_wraper textarea::placeholder,
+.form_icon .main_wraper input.wpcf7-form-control::placeholder {
+ color: #ffffff;
+  opacity: .3;
+}
+
+.form_icon .main_wraper .bottom_line{
+  display: block;
+  height: 1px;
+  width: 100%;
+  position: relative;
+  background-color: rgb(255,255,255,.1);
+  -webkit-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  z-index: 1;
+/*   margin-top: -1px; */
+}
+
+.form_icon .main_wraper .bottom_line::before{
+  content: "";
+  display: block;
+  width: 0%;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background-color: #ffffff;
+  -webkit-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.form_icon .main_wraper:hover .bottom_line::before{
+  width: 100% ;
+}
+
+.form_icon .main_wraper:focus-within textarea::placeholder,
+.form_icon .main_wraper:focus-within input.wpcf7-form-control::placeholder{
+  opacity: 1;
+}
+
+.form_icon .main_wraper:focus-within .bottom_line::before {
+  width: 100%;
+}
+.form_icon .formButton{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+@media only screen and (max-width: 991px){
+  .form_icon .formButton{
+    flex-direction: column-reverse;
+    align-items: start;
+    gap: 7px;
+  }
+  .form_icon .formButton .col-md-8{
+    margin-bottom: 12px;
+  }
+}
+
+
+/* form bottm input check field */
+.custom-checkbox input[type="checkbox"] {
+  display: none;
+}
+.custom-checkbox {
+  display: flex;
+  font-size: 14px;
+  color: #868686;
+}
+
+.custom-checkbox .checkmark {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(255,255,255,0.5); 
+  background-color: transparent;
+  border-radius: 4px;
+  display: inline-block;
+  margin-right: 8px;
+  position: relative;
+  top: 6px;
+}
+
+/* Style the square dot when checked */
+.custom-checkbox input[type="checkbox"]:checked + .checkmark::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: #ffffffba; 
+  position: absolute;
+  border-radius: 2px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.custom-checkbox .formcheckbox_link {
+  color: #ffffff !important;
+  text-decoration: underline !important;
+}
+.custom-checkbox .formcheckbox_link:hover{
+  color: #c19977 !important;
+}
+.custom-checkbox .checkbox_text{
+  user-select: none;
+}
+
+
+/* dark form css for the light theme   */
+.light_form .main_wraper i {
+    color: #65605c;
+}
+
+.light_form .main_wraper textarea,
+.light_form .main_wraper input.wpcf7-form-control {
+    border: none;
+/*     background-color: #f9f9f9; */
+    color: #65605c;
+}
+
+.light_form .main_wraper textarea::placeholder,
+.light_form .main_wraper input.wpcf7-form-control::placeholder {
+    color: #000000;
+}
+
+.light_form .main_wraper .bottom_line {
+    background-color: rgb(193 153 119 / 35%);;
+}
+
+.light_form .main_wraper .bottom_line::before {
+    background-color: #65605c;
+}
+
+.light_form .custom-checkbox {
+    color: #65605c;
+}
+
+.light_form .custom-checkbox .checkmark {
+    border: 1px solid #65605c;
+    background-color: #ffffff;
+}
+
+.light_form .custom-checkbox input[type="checkbox"]:checked + .checkmark::after {
+    background-color: #65605c;
+}
+
+.light_form .formcheckbox_link {
+    color: #65605c;
+}
+.light_form .formcheckbox_link{
+  color: #000000 !important;
+} 
+.light_form .formcheckbox_link:hover {
+    color: #555555;
+}
+.mc4wp-form-5560 .custom-checkbox {
+  padding-top: 7px;
+}
+.light_form .mc4wp-form-5560 .subscribe-inner-form input{
+  border-color: rgba(0, 0, 0, 0.3);
+  color: #000000;
+}
+
+
 /*--------------------------------------------------------------
 ## Background List
 --------------------------------------------------------------*/
