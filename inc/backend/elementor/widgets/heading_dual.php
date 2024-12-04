@@ -354,38 +354,216 @@ class Restobar_Heading_dual extends Widget_Base{
 			]
 		);
 
+
+
+		// First Parent Title Styling
+        $this->add_control(
+            'heading_parent_title_1',
+            [
+                'label' => __( 'First Parent Title', 'restobar' ),
+                'type' => Controls_Manager::HEADING,
+                'separator' => 'before',
+            ]
+        );
+
+        // Text Stroke Option for First Parent Title
+        $this->add_control(
+            'parent_title_1_stroke_enable',
+            [
+                'label' => __( 'Text Stroke Effect', 'restobar' ),
+                'type' => Controls_Manager::CHOOSE,
+                'options' => [
+                    'no' => [
+                        'title' => __( 'No', 'restobar' ),
+                        'icon' => 'eicon-close',
+                    ],
+                    'yes' => [
+                        'title' => __( 'Yes', 'restobar' ),
+                        'icon' => 'eicon-check',
+                    ],
+                ],
+                'default' => 'no',
+            ]
+        );
+
+        $this->add_control(
+            'parent_title_1_stroke_color',
+            [
+                'label' => __( 'Stroke Color', 'restobar' ),
+                'type' => Controls_Manager::COLOR,
+                'default' => '#000000',
+                'selectors' => [
+                    '{{WRAPPER}} .xp-heading .parent-head-1.has-stroke' => '-webkit-text-stroke-color: {{VALUE}};',
+                ],
+                'condition' => [
+                    'parent_title_1_stroke_enable' => 'yes',
+                ],
+            ]
+        );
+
+        $this->add_responsive_control(
+            'parent_title_1_stroke_width',
+            [
+                'label' => __( 'Stroke Width', 'restobar' ),
+                'type' => Controls_Manager::SLIDER,
+                'range' => [
+                    'px' => [
+                        'min' => 0,
+                        'max' => 10,
+                        'step' => 0.1,
+                    ],
+                ],
+                'default' => [
+                    'unit' => 'px',
+                    'size' => 1,
+                ],
+                'selectors' => [
+                    '{{WRAPPER}} .xp-heading .parent-head-1.has-stroke' => '-webkit-text-stroke-width: {{SIZE}}{{UNIT}};',
+                ],
+                'condition' => [
+                    'parent_title_1_stroke_enable' => 'yes',
+                ],
+            ]
+        );
+
+        $this->add_control(
+            'parent_title_1_color',
+            [
+                'label' => __( 'Color', 'restobar' ),
+                'type' => Controls_Manager::COLOR,
+                'default' => '',
+                'selectors' => [
+                    '{{WRAPPER}} .xp-heading .parent-head-1' => 'color: {{VALUE}};',
+                ]
+            ]
+        );
+
+        // Second Parent Title Styling
+        $this->add_control(
+            'heading_parent_title_2',
+            [
+                'label' => __( 'Second Parent Title', 'restobar' ),
+                'type' => Controls_Manager::HEADING,
+                'separator' => 'before',
+            ]
+        );
+
+        // Text Stroke Option for Second Parent Title
+        $this->add_control(
+            'parent_title_2_stroke_enable',
+            [
+                'label' => __( 'Text Stroke Effect', 'restobar' ),
+                'type' => Controls_Manager::CHOOSE,
+                'options' => [
+                    'no' => [
+                        'title' => __( 'No', 'restobar' ),
+                        'icon' => 'eicon-close',
+                    ],
+                    'yes' => [
+                        'title' => __( 'Yes', 'restobar' ),
+                        'icon' => 'eicon-check',
+                    ],
+                ],
+                'default' => 'no',
+            ]
+        );
+
+        $this->add_control(
+            'parent_title_2_stroke_color',
+            [
+                'label' => __( 'Stroke Color', 'restobar' ),
+                'type' => Controls_Manager::COLOR,
+                'default' => '#000000',
+                'selectors' => [
+                    '{{WRAPPER}} .xp-heading .parent-head-2.has-stroke' => '-webkit-text-stroke-color: {{VALUE}};',
+                ],
+                'condition' => [
+                    'parent_title_2_stroke_enable' => 'yes',
+                ],
+            ]
+        );
+
+        $this->add_responsive_control(
+            'parent_title_2_stroke_width',
+            [
+                'label' => __( 'Stroke Width', 'restobar' ),
+                'type' => Controls_Manager::SLIDER,
+                'range' => [
+                    'px' => [
+                        'min' => 0,
+                        'max' => 10,
+                        'step' => 0.1,
+                    ],
+                ],
+                'default' => [
+                    'unit' => 'px',
+                    'size' => 1,
+                ],
+                'selectors' => [
+                    '{{WRAPPER}} .xp-heading .parent-head-2.has-stroke' => '-webkit-text-stroke-width: {{SIZE}}{{UNIT}};',
+                ],
+                'condition' => [
+                    'parent_title_2_stroke_enable' => 'yes',
+                ],
+            ]
+        );
+
+        $this->add_control(
+            'parent_title_2_color',
+            [
+                'label' => __( 'Color', 'restobar' ),
+                'type' => Controls_Manager::COLOR,
+                'default' => '',
+                'selectors' => [
+                    '{{WRAPPER}} .xp-heading .parent-head-2' => 'color: {{VALUE}};',
+                ]
+            ]
+        );
+
 		$this->end_controls_section();
 	}
 
 	protected function render() {
-		$settings = $this->get_settings_for_display();
-		
-		$hl = $settings['subtitle_style'];
+        $settings = $this->get_settings_for_display();
+        
+        $hl = $settings['subtitle_style'];
 
-		$this->add_render_attribute( 'subtitle', 'class', $hl );
-		$this->add_render_attribute( 'heading', 'class', 'main-head' );
-		$this->add_render_attribute( 'parent_heading_1', 'class', 'parent-head hl-text parent-head-1' );
-		$this->add_render_attribute( 'parent_heading_2', 'class', 'parent-head hl-text parent-head-2' );
+        $this->add_render_attribute( 'subtitle', 'class', $hl );
+        $this->add_render_attribute( 'heading', 'class', 'main-head' );
+        
+        // Add stroke class for First Parent Title
+        $parent_heading_1_classes = 'parent-head hl-text parent-head-1';
+        if ($settings['parent_title_1_stroke_enable'] === 'yes') {
+            $parent_heading_1_classes .= ' has-stroke';
+        }
+        $this->add_render_attribute( 'parent_heading_1', 'class', $parent_heading_1_classes );
+        
+        // Add stroke class for Second Parent Title
+        $parent_heading_2_classes = 'parent-head hl-text parent-head-2';
+        if ($settings['parent_title_2_stroke_enable'] === 'yes') {
+            $parent_heading_2_classes .= ' has-stroke';
+        }
+        $this->add_render_attribute( 'parent_heading_2', 'class', $parent_heading_2_classes );
 
-		$title = $settings['title'];
-		$parent_title_1 = $settings['parent_title_1'];
-		$parent_title_2 = $settings['parent_title_2'];
+        $title = $settings['title'];
+        $parent_title_1 = $settings['parent_title_1'];
+        $parent_title_2 = $settings['parent_title_2'];
 
-		$title_html = sprintf( 
-			'<%1$s %2$s>%3$s %4$s %5$s</%1$s>', 
-			$settings['header_size'], 
-			$this->get_render_attribute_string( 'heading' ),
-			$title, 
-			(!empty($parent_title_1) ? '<span '.$this->get_render_attribute_string( 'parent_heading_1' ).'>' . $parent_title_1 . '</span>' : ''),
-			(!empty($parent_title_2) ? '<span '.$this->get_render_attribute_string( 'parent_heading_2' ).'>' . $parent_title_2 . '</span>' : '')
-		);
-		?>
-		<div class="xp-heading">
-	        <?php if( ! empty( $settings['sub'] ) ) { echo '<span '.$this->get_render_attribute_string( 'subtitle' ).'>' .$settings['sub']. '</span>'; } ?>
-	        <?php if( ! empty( $settings['title'] ) ) { echo wp_kses_post( $title_html ); } ?>
-	    </div>
-	    <?php
-	}
+        $title_html = sprintf( 
+            '<%1$s %2$s>%3$s %4$s %5$s</%1$s>', 
+            $settings['header_size'], 
+            $this->get_render_attribute_string( 'heading' ),
+            $title, 
+            (!empty($parent_title_1) ? '<span '.$this->get_render_attribute_string( 'parent_heading_1' ).'>' . $parent_title_1 . '</span>' : ''),
+            (!empty($parent_title_2) ? '<span '.$this->get_render_attribute_string( 'parent_heading_2' ).'>' . $parent_title_2 . '</span>' : '')
+        );
+        ?>
+        <div class="xp-heading">
+            <?php if( ! empty( $settings['sub'] ) ) { echo '<span '.$this->get_render_attribute_string( 'subtitle' ).'>' .$settings['sub']. '</span>'; } ?>
+            <?php if( ! empty( $settings['title'] ) ) { echo wp_kses_post( $title_html ); } ?>
+        </div>
+        <?php
+    }
 }
 // After the Schedule class is defined, I must register the new widget class with Elementor:
 Plugin::instance()->widgets_manager->register( new Restobar_Heading_dual() );
