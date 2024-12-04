@@ -448,9 +448,9 @@ blockquote:before {
   line-height: 50px;
   margin-left: -25px;
   color: #C19977;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
   box-shadow: 6px 6px 13px 0 rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 6px 6px 13px 0 rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 6px 6px 13px 0 rgba(0, 0, 0, 0.1);
@@ -667,9 +667,9 @@ mark, ins {
   height: 38px;
   color: #1a1b1e;
   background: rgba(220, 219, 219, 0.5);
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
 }
 .btn-details i:before {
   font-size: 16px;
@@ -752,9 +752,9 @@ mark, ins {
   -moz-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   -ms-transition: all 0.3s linear;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
 }
 .owl-carousel .owl-nav button.owl-prev:hover,
 .owl-carousel .owl-nav button.owl-next:hover {
@@ -960,9 +960,9 @@ td {
   -o-transition: all 0.3s linear;
   -ms-transition: all 0.3s linear;
   font-size: 14px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
   padding: 14px 30px;
   line-height: 1.42857143;
   display: inline-block;
@@ -1096,9 +1096,9 @@ textarea {
   box-sizing: border-box;
   outline: none;
   font-size: 14px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
 }
 input[type=text]:focus,
 input[type=email]:focus,
@@ -1993,7 +1993,7 @@ a:hover, a:active {
 }
 .screen-reader-text:focus {
   background-color: #f1f1f1;
-  border-radius: 3px;
+  border-radius: 0;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
   clip: auto !important;
   clip-path: none;
@@ -2332,9 +2332,9 @@ a:hover, a:active {
   line-height: 40px;
   margin-right: 5px;
   border: 1px solid #e7e7e7;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
 }
 .page-pagination li a i:before, .page-pagination li span i:before {
   font-size: 16px;
@@ -2395,9 +2395,9 @@ a:hover, a:active {
   display: inline-block;
   vertical-align: middle;
   border: 1px solid rgba(255, 255, 255, 0.15);
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
 }
 .blog-post .tagcloud a:hover {
   background: rgb(193, 153, 119, 0.1);
@@ -2512,9 +2512,9 @@ a:hover, a:active {
   line-height: 1;
   margin: 5px 15px 0 0 !important;
   border: 1px solid #e7e7e7;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
 }
 .drop-cap span {
   font-size: 20px;
@@ -3028,9 +3028,9 @@ a:hover, a:active {
   display: inline-block;
   vertical-align: middle;
   border: 1px solid transparent;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
 }
 .widget .tagcloud a:hover {
   background: rgb(193, 153, 119, 0.1);
@@ -3212,9 +3212,9 @@ a:hover, a:active {
   height: 48px;
   line-height: 1;
   border-color: #dbdbdb;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
 }
 
 .search-form .search-submit {
@@ -3235,9 +3235,9 @@ a:hover, a:active {
   -moz-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   -ms-transition: all 0.3s linear;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
 }
 .search-form .search-submit i {
   color: #fff;
@@ -4495,9 +4495,9 @@ object {
   color: #fff;
   min-width: 40px;
   min-height: 20px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
   -webkit-transform: translateY(-15px);
   -ms-transform: translateY(-15px);
   transform: translateY(-15px);
@@ -4692,9 +4692,9 @@ object {
   color: #fff;
   padding: 15px 30px;
   background: transparent;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 15px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
   gap: 10px;
   flex-direction: column;
 }
@@ -5694,9 +5694,9 @@ object {
   font-size: 14px;
   background: #1a1b1e;
   color: #fff;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
 }
 .team-1 .team-social span, .team-1 .team-social a:hover {
   cursor: pointer;
@@ -5960,9 +5960,9 @@ object {
   padding: 9px 20px;
   background: #f6f6f6;
   border: 1px solid rgba(0, 0, 0, 0.15);
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
   transition: all 0.3s linear;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
@@ -6336,9 +6336,9 @@ object {
   text-align: center;
   color: #fff;
   background: #C19977;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
 }
 .xp-message-box .icon-main svg {
   height: 30px;
@@ -6464,7 +6464,7 @@ object {
     padding: 11px 24px; 
     margin-top: 0;
     border: 1px solid rgba(0, 0, 0, 0.15); 
-    border-radius: 3px; 
+    border-radius: 0; 
     font-size: 14px; 
     color: #ffffff; 
     box-sizing: border-box; 
@@ -7054,7 +7054,7 @@ div.elementor-widget-heading.elementor-widget-heading .elementor-heading-title {
   font-size: 13px;
   line-height: 1;
   padding: 16px 20px;
-  border-radius: 3px;
+  border-radius: 0;
 }
 
 .elementor-section.ml_0 .elementor-container {
@@ -7080,9 +7080,9 @@ div.elementor-widget-heading.elementor-widget-heading .elementor-heading-title {
   padding: 10px 13px;
   margin-top: 8px;
   background: #1a1b1e;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
 }
 .elementor-default .elementor-widget-text-editor .elementor-drop-cap span {
   color: #fff;
@@ -7755,9 +7755,9 @@ div.elementor-widget-heading.elementor-widget-heading .elementor-heading-title {
   color: #c0c1c2;
   border-color: rgba(255, 255, 255, 0.3);
   padding: 0 65px 0 20px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
 }
 .mc4wp-form-fields .subscribe-inner-form input[type=email]::placeholder {
   color: #c0c1c2;
@@ -7780,9 +7780,9 @@ div.elementor-widget-heading.elementor-widget-heading .elementor-heading-title {
   -moz-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   -ms-transition: all 0.3s linear;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
 }
 .mc4wp-form-fields .subscribe-inner-form .subscribe-btn-icon i {
   display: inline-block;
@@ -7821,9 +7821,9 @@ div.elementor-widget-heading.elementor-widget-heading .elementor-heading-title {
   -moz-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   -ms-transition: all 0.2s linear;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
 }
 #back-to-top.show {
   opacity: 1;
