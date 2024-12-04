@@ -6390,18 +6390,18 @@ object {
 }
 .wpcf7 p {
   display: block;
-  margin-bottom: 15px;
+  margin-bottom: 45px;
 }
 .wpcf7 p:last-child {
   margin-bottom: 0;
 }
 .wpcf7 .row {
-  margin-left: -10px;
-  margin-right: -10px;
+  margin-left: -20px;
+  margin-right: -20px;
 }
 .wpcf7 .row .col-md-6 {
-  padding: 0 10px;
-  margin-bottom: 15px;
+  padding: 0 20px;
+  margin-bottom: 30px;
 }
 .wpcf7 div.wpcf7-response-output {
   margin: 20px 0 0;
