@@ -408,36 +408,7 @@ class Restobar_Heading_dual extends Widget_Base{
 			]
 		);
 
-		//Title
-		$this->add_control(
-			'heading_title',
-			[
-				'label' => __( 'Title', 'restobar' ),
-				'type' => Controls_Manager::HEADING,
-				'separator' => 'before',
-			]
-		);
-		$this->add_control(
-			'title_color',
-			[
-				'label' => __( 'Color', 'restobar' ),
-				'type' => Controls_Manager::COLOR,
-				'default' => '',
-				'selectors' => [
-					'{{WRAPPER}} .xp-heading .main-head' => 'color: {{VALUE}};',
-				]
-			]
-		);
-		$this->add_group_control(
-			Group_Control_Typography::get_type(),
-			[
-				'name' => 'title_typography',
-				'selector' => '{{WRAPPER}} .xp-heading .main-head',
-			]
-		);
-
-
-        // Second Parent Title Styling
+		// Second Parent Title Styling
         $this->add_control(
             'heading_parent_title_2',
             [
@@ -518,6 +489,34 @@ class Restobar_Heading_dual extends Widget_Base{
                 ]
             ]
         );
+
+		//Title
+		$this->add_control(
+			'heading_title',
+			[
+				'label' => __( 'Title', 'restobar' ),
+				'type' => Controls_Manager::HEADING,
+				'separator' => 'before',
+			]
+		);
+		$this->add_control(
+			'title_color',
+			[
+				'label' => __( 'Color', 'restobar' ),
+				'type' => Controls_Manager::COLOR,
+				'default' => '',
+				'selectors' => [
+					'{{WRAPPER}} .xp-heading .main-head' => 'color: {{VALUE}};',
+				]
+			]
+		);
+		$this->add_group_control(
+			Group_Control_Typography::get_type(),
+			[
+				'name' => 'title_typography',
+				'selector' => '{{WRAPPER}} .xp-heading .main-head',
+			]
+		);
 
 		$this->end_controls_section();
 	}
