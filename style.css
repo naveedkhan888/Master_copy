@@ -6584,6 +6584,9 @@ object {
 .form_icon .main_wraper textarea,
 .form_icon .main_wraper input.wpcf7-form-control{
   padding: 15px 10px 15px 36px;
+  border-width: 0 0 1px 0;
+  border-color: transparent;
+  border-radius: 0;
 }
 
 .form_icon .main_wraper textarea::placeholder,
@@ -6597,12 +6600,12 @@ object {
   height: 1px;
   width: 100%;
   position: relative;
-  background-color: rgb(255,255,255,.1);
+  background-color: rgb(255,255,255,.15);
   -webkit-transition: all 0.4s ease;
   -ms-transition: all 0.4s ease;
   transition: all 0.4s ease;
   z-index: 1;
-/*   margin-top: -1px; */
+  margin-top: -1px;
 }
 
 .form_icon .main_wraper .bottom_line::before{
@@ -6745,7 +6748,7 @@ object {
   padding-top: 7px;
 }
 .light_form .mc4wp-form-fields .subscribe-inner-form input[type="email"] {
-  border-color: rgba(0, 0, 0, 0.3);
+  border-color: rgba(0, 0, 0, 0.15);
   color: #1a1b1e;
 }
 
