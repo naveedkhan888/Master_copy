@@ -263,6 +263,7 @@ progress {
  */
 textarea {
   overflow: auto;
+  resize: none;
 }
 
 /**
@@ -1050,26 +1051,26 @@ td {
 }
 
 .main-form input::-webkit-input-placeholder { /* Chrome, Safari, Edge */
-  color: #ffffff;
+  color: #000000;
   opacity: 1;
 }
 .main-form textarea::placeholder {
-  color: #ffffff;
+  color: #000000;
   opacity: 1;
 }
 
 .main-form input:-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: #ffffff;
+  color: #000000;
   opacity: 1;
 }
 
 .main-form input::-ms-input-placeholder { /* Microsoft Edge */
-  color: #ffffff;
+  color: #000000;
   opacity: 1;
 }
 
 .main-form input::placeholder { /* Standard syntax */
-  color: #ffffff;
+  color: #000000;
   opacity: 1;
 }
 
