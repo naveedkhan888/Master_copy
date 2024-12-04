@@ -6588,6 +6588,10 @@ object {
   border-color: transparent;
   border-radius: 0;
 }
+.dark__form .main_wraper textarea, 
+.dark__form .main_wraper input.wpcf7-form-control {
+  color: #fff;
+}
 
 .form_icon .main_wraper textarea::placeholder,
 .form_icon .main_wraper input.wpcf7-form-control::placeholder {
