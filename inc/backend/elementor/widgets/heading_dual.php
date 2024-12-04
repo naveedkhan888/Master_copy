@@ -296,66 +296,6 @@ class Restobar_Heading_dual extends Widget_Base{
 			]
 		);
 
-		// Second Parent Title Styling
-		$this->add_control(
-			'heading_parent_title_2',
-			[
-				'label' => __( 'Second Parent Title', 'restobar' ),
-				'type' => Controls_Manager::HEADING,
-				'separator' => 'before',
-			]
-		);
-
-		$this->add_control(
-			'parent_title_2_color',
-			[
-				'label' => __( 'Color', 'restobar' ),
-				'type' => Controls_Manager::COLOR,
-				'default' => '',
-				'selectors' => [
-					'{{WRAPPER}} .xp-heading .parent-head-2' => 'color: {{VALUE}};',
-				]
-			]
-		);
-
-		$this->add_group_control(
-			Group_Control_Typography::get_type(),
-			[
-				'name' => 'parent_title_2_typography',
-				'selector' => '{{WRAPPER}} .xp-heading .parent-head-2',
-			]
-		);
-
-		//Title
-		$this->add_control(
-			'heading_title',
-			[
-				'label' => __( 'Title', 'restobar' ),
-				'type' => Controls_Manager::HEADING,
-				'separator' => 'before',
-			]
-		);
-		$this->add_control(
-			'title_color',
-			[
-				'label' => __( 'Color', 'restobar' ),
-				'type' => Controls_Manager::COLOR,
-				'default' => '',
-				'selectors' => [
-					'{{WRAPPER}} .xp-heading .main-head' => 'color: {{VALUE}};',
-				]
-			]
-		);
-		$this->add_group_control(
-			Group_Control_Typography::get_type(),
-			[
-				'name' => 'title_typography',
-				'selector' => '{{WRAPPER}} .xp-heading .main-head',
-			]
-		);
-
-
-
 		// First Parent Title Styling
         $this->add_control(
             'heading_parent_title_1',
@@ -437,6 +377,65 @@ class Restobar_Heading_dual extends Widget_Base{
                 ]
             ]
         );
+
+		// Second Parent Title Styling
+		$this->add_control(
+			'heading_parent_title_2',
+			[
+				'label' => __( 'Second Parent Title', 'restobar' ),
+				'type' => Controls_Manager::HEADING,
+				'separator' => 'before',
+			]
+		);
+
+		$this->add_control(
+			'parent_title_2_color',
+			[
+				'label' => __( 'Color', 'restobar' ),
+				'type' => Controls_Manager::COLOR,
+				'default' => '',
+				'selectors' => [
+					'{{WRAPPER}} .xp-heading .parent-head-2' => 'color: {{VALUE}};',
+				]
+			]
+		);
+
+		$this->add_group_control(
+			Group_Control_Typography::get_type(),
+			[
+				'name' => 'parent_title_2_typography',
+				'selector' => '{{WRAPPER}} .xp-heading .parent-head-2',
+			]
+		);
+
+		//Title
+		$this->add_control(
+			'heading_title',
+			[
+				'label' => __( 'Title', 'restobar' ),
+				'type' => Controls_Manager::HEADING,
+				'separator' => 'before',
+			]
+		);
+		$this->add_control(
+			'title_color',
+			[
+				'label' => __( 'Color', 'restobar' ),
+				'type' => Controls_Manager::COLOR,
+				'default' => '',
+				'selectors' => [
+					'{{WRAPPER}} .xp-heading .main-head' => 'color: {{VALUE}};',
+				]
+			]
+		);
+		$this->add_group_control(
+			Group_Control_Typography::get_type(),
+			[
+				'name' => 'title_typography',
+				'selector' => '{{WRAPPER}} .xp-heading .main-head',
+			]
+		);
+
 
         // Second Parent Title Styling
         $this->add_control(
