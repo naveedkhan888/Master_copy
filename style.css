@@ -6703,14 +6703,11 @@ object {
 
 .light_form .main_wraper textarea,
 .light_form .main_wraper input.wpcf7-form-control {
-    border: none;
-/*     background-color: #f9f9f9; */
-    color: #65605c;
 }
 
 .light_form .main_wraper textarea::placeholder,
 .light_form .main_wraper input.wpcf7-form-control::placeholder {
-    color: #000000;
+    color: #1a1b1e;
     opacity: 1;
 }
 
@@ -6744,12 +6741,12 @@ object {
 .light_form .formcheckbox_link:hover {
     color: #555555;
 }
-.mc4wp-form-5560 .custom-checkbox {
+.mc4wp-form .custom-checkbox {
   padding-top: 7px;
 }
-.light_form .mc4wp-form-5560 .subscribe-inner-form input{
+.light_form .mc4wp-form .subscribe-inner-form input{
   border-color: rgba(0, 0, 0, 0.3);
-  color: #000000;
+  color: #1a1b1e;
 }
 
 
