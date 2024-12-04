@@ -6715,7 +6715,7 @@ object {
 }
 
 .light_form .main_wraper .bottom_line {
-    background-color: rgb(193 153 119 / 35%);;
+    background-color: rgba(0, 0, 0, 0.15);
 }
 
 .light_form .main_wraper .bottom_line::before {
