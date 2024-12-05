@@ -6664,6 +6664,7 @@ object {
   display: flex;
   font-size: 14px;
   color: #868686;
+  justify-content: center;
 }
 
 .custom-checkbox .checkmark {
@@ -6749,10 +6750,14 @@ object {
     color: #555555;
 }
 .mc4wp-form .custom-checkbox {
-  padding-top: 7px;
+  padding-top: 14px;
 }
 .light_form .mc4wp-form-fields .subscribe-inner-form input[type="email"] {
   border-color: rgba(0, 0, 0, 0.15);
+  color: #1a1b1e;
+}
+
+.light_form .mc4wp-form-fields .subscribe-inner-form .subscribe-btn-icon {
   color: #1a1b1e;
 }
 
@@ -7758,7 +7763,8 @@ div.elementor-widget-heading.elementor-widget-heading .elementor-heading-title {
   background: transparent;
   color: #c0c1c2;
   border-color: rgba(255, 255, 255, 0.3);
-  padding: 0 65px 0 20px;
+  border-width: 0 0 1px 0;
+  padding: 0 65px 0 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
@@ -7767,18 +7773,17 @@ div.elementor-widget-heading.elementor-widget-heading .elementor-heading-title {
   color: #c0c1c2;
 }
 .mc4wp-form-fields .subscribe-inner-form .subscribe-btn-icon {
-  background: #31333f;
+  background: transparent !important;
   border: none;
   outline: none;
   display: block;
   position: absolute;
-  right: 5px;
+  right: 0;
   top: 5px;
-  width: 40px;
   height: 40px;
   line-height: 40px;
   text-align: center;
-  color: #fff;
+  color: #1a1b1e;
   transition: all 0.3s linear;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
@@ -7792,7 +7797,7 @@ div.elementor-widget-heading.elementor-widget-heading .elementor-heading-title {
   display: inline-block;
 }
 .mc4wp-form-fields .subscribe-inner-form .subscribe-btn-icon i:before {
-  font-size: 14px;
+  font-size: 18px;
 }
 .mc4wp-form-fields .subscribe-inner-form .subscribe-btn-icon:hover {
   background: #C19977;
