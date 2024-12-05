@@ -6411,7 +6411,7 @@ object {
   display: none;
 }
 .wpcf7 .wpcf7-not-valid {
-  border-color: #f00;
+  border-color: #f00 !important;
 }
 .wpcf7 div.wpcf7-validation-errors,
 .wpcf7 div.wpcf7-acceptance-missing {
@@ -7783,7 +7783,7 @@ div.elementor-widget-heading.elementor-widget-heading .elementor-heading-title {
   height: 40px;
   line-height: 40px;
   text-align: center;
-  color: #1a1b1e;
+  color: #ffffff;
   transition: all 0.3s linear;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
