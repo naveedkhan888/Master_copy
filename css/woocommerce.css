@@ -434,7 +434,7 @@ WooCommerce styles override
   border-color: #C19977;
 }
 .woocommerce-product-details__short-description p {
-  color: #ffffff;
+
 }
 .woocommerce div.product .woocommerce-tabs ul.tabs li.active a {
   border-color: #C19977;
@@ -511,7 +511,7 @@ WooCommerce styles override
   box-shadow: 8px 8px 30px 0 rgba(0, 0, 0, 0.12);
   -webkit-box-shadow: 8px 8px 30px 0 rgba(0, 0, 0, 0.12);
   -moz-box-shadow: 8px 8px 30px 0 rgba(0, 0, 0, 0.12);
-  background: #171c24;
+  background: #fff;
 }
 
 .woocommerce-cart .wc-proceed-to-checkout {
@@ -593,7 +593,7 @@ WooCommerce styles override
   font-size: 24px;
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
-  color: #fff;
+  color: #1a1b1e;
 }
 
 #add_payment_method .cart-collaterals .cart_totals table td, #add_payment_method .cart-collaterals .cart_totals table th,
@@ -603,7 +603,7 @@ WooCommerce styles override
   font-family: "DM Sans", sans-serif;
   font-weight: 600;
   line-height: 24px;
-  color: #ffffff;
+  color: #1a1b1e;
   padding: 9px 10px;
   border: none;
 }
@@ -958,7 +958,7 @@ WooCommerce styles override
 
 .product_meta > span {
   display: block;
-  color: #ffffff;
+  color: #1a1b1e;
   font-size: 16px;
   font-family: "DM Sans", sans-serif;
   font-weight: 600;
