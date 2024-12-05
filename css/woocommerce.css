@@ -709,6 +709,7 @@ WooCommerce styles override
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
+  border: 0;
 }
 .woocommerce #respond input#submit.disabled:hover, .woocommerce #respond input#submit:disabled:hover,
 .woocommerce #respond input#submit:disabled[disabled]:hover, .woocommerce a.button.disabled:hover,
