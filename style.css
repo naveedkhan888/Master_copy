@@ -6593,8 +6593,8 @@ object {
   color: #fff;
 }
 
-.form_icon .main_wraper textarea::placeholder,
-.form_icon .main_wraper input.wpcf7-form-control::placeholder {
+.dark__form .form_icon .main_wraper textarea::placeholder,
+.dark__form .form_icon .main_wraper input.wpcf7-form-control::placeholder {
  color: #ffffff;
   opacity: 1;
 }
