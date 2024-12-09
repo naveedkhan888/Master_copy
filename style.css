@@ -3255,9 +3255,9 @@ a:hover, a:active {
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
   box-shadow: 8px 8px 30px 0 rgba(0, 0, 0, 0.12);
   -webkit-box-shadow: 8px 8px 30px 0 rgba(0, 0, 0, 0.12);
   -moz-box-shadow: 8px 8px 30px 0 rgba(0, 0, 0, 0.12);
@@ -4688,7 +4688,7 @@ object {
 }
 .tab-titles .title-item a {
   display: flex;
-  color: #fff;
+  color: #1a1b1e;
   padding: 15px 30px;
   background: transparent;
   -webkit-border-radius: 0;
