@@ -56,14 +56,14 @@ class Restobar_Author_Widget extends WP_Widget {
                 if ( ! empty( $text ) ) {echo '<p class="author-widget_text">' . $text . '</p>';} 
                 ?>
                 <div class="author-widget_social">
-                    <?php if ($twitter) { echo '<a class="social-twitter" href="'.esc_url($twitter).'"><i class="fab fa-twitter"></i></a>'; } ?>
-                    <?php if ($facebook) { echo '<a class="social-facebook" href="'.esc_url($facebook).'"><i class="fab fa-facebook-f"></i></a>'; } ?>            
-                    <?php if ($google) { echo '<a class="social-google" href="'.esc_url($google).'"><i class="fab fa-google-plus-g"></i></a>'; } ?>           
-                    <?php if ($linkedin) { echo '<a class="social-linkedin" href="'.esc_url($linkedin).'"><i class="fab fa-linkedin-in"></i></a>'; } ?>
-                    <?php if ($pinterest) { echo '<a class="social-pinterest" href="'.esc_url($pinterest).'"><i class="fab fa-pinterest-p"></i></a>'; } ?>
-                    <?php if ($instagram) { echo '<a class="social-instagram" href="'.esc_url($instagram).'"><i class="fab fa-instagram"></i></a>'; } ?>
-                    <?php if ($youtube) { echo '<a class="social-youtube" href="'.esc_url($youtube).'"><i class="fab fa-youtube"></i></a>'; } ?>
-                    <?php if ($dribbble) { echo '<a class="social-dribbble" href="'.esc_url($dribbble).'"><i class="fab fa-dribbble"></i></a>'; } ?>
+                    <?php if ($twitter) { echo '<a class="social-twitter" href="'.esc_url($twitter).'"><i class="xp-webicon-twitter"></i></a>'; } ?>
+                    <?php if ($facebook) { echo '<a class="social-facebook" href="'.esc_url($facebook).'"><i class="xp-webicon-facebook"></i></a>'; } ?>            
+                    <?php if ($google) { echo '<a class="social-google" href="'.esc_url($google).'"><i class="xp-webicon-google-plus"></i></a>'; } ?>           
+                    <?php if ($linkedin) { echo '<a class="social-linkedin" href="'.esc_url($linkedin).'"><i class="xp-webicon-linkedin"></i></a>'; } ?>
+                    <?php if ($pinterest) { echo '<a class="social-pinterest" href="'.esc_url($pinterest).'"><i class="xp-webicon-pinterest"></i></a>'; } ?>
+                    <?php if ($instagram) { echo '<a class="social-instagram" href="'.esc_url($instagram).'"><i class="xp-webicon-instagram"></i></a>'; } ?>
+                    <?php if ($youtube) { echo '<a class="social-youtube" href="'.esc_url($youtube).'"><i class="xp-webicon-youtube"></i></a>'; } ?>
+                    <?php if ($dribbble) { echo '<a class="social-dribbble" href="'.esc_url($dribbble).'"><i class="xp-webicon-dribble"></i></a>'; } ?>
                 </div>
             </div>
         </div>

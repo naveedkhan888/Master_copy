@@ -2107,7 +2107,6 @@ a:hover, a:active {
 }
 .post-box p {
   margin-bottom: 0;
-  color: #9f9e9e;
 }
 .post-box .entry-media {
   position: relative;
@@ -2233,7 +2232,7 @@ a:hover, a:active {
   font-size: 22px;
   font-weight: 600;
   font-family: "DM Sans", sans-serif;
-  color: #ffffff;
+  color: #1a1b1e;
 }
 .post-box .link-box a:hover {
   color: #C19977;
@@ -2382,7 +2381,7 @@ a:hover, a:active {
 }
 .blog-post .tagcloud a {
   color: #717171;
-  background: transparent;
+  background: #f5f5f5;
   font-size: 12px !important;
   font-family: "DM Sans", sans-serif;
   text-transform: uppercase;
@@ -2458,7 +2457,7 @@ a:hover, a:active {
 }
 .blog-post .author-bio {
   overflow: hidden;
-  background: #080b0f;
+  background: #f5f5f5;
   padding: 40px;
   margin-bottom: 45px;
   -webkit-border-radius: 5px;
@@ -2924,7 +2923,7 @@ a:hover, a:active {
   box-shadow: 8px 8px 30px 0 rgba(0, 0, 0, 0.12);
   -webkit-box-shadow: 8px 8px 30px 0 rgba(0, 0, 0, 0.12);
   -moz-box-shadow: 8px 8px 30px 0 rgba(0, 0, 0, 0.12);
-  background: #080b0f;
+  background: #ffffff;
 }
 .comment-respond .comment-reply-title {
   margin-bottom: 10px;

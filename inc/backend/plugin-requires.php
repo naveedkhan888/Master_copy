@@ -69,6 +69,11 @@ function restobar_register_required_plugins() {
             'slug'               => 'qi-addons-for-elementor',
             'required'           => true,
 		),
+		array(
+            'name'               => esc_html__( 'Classic Editor', 'restobar' ),
+            'slug'               => 'classic-editor',
+            'required'           => true,
+		),
         
 	);
 	$config  = array(
