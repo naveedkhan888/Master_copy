@@ -1366,6 +1366,7 @@ a:hover, a:active {
 .main-navigation > ul > li:before {
   content: "";
   position: absolute;
+  display: none;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -1388,7 +1389,7 @@ a:hover, a:active {
 .main-navigation > ul > li > a {
   position: relative;
   display: inline-block;
-  padding: 10px 0px;
+  padding: 0 0px;
   line-height: 35px;
   text-decoration: none;
   text-align: center;
