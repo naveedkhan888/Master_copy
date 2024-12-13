@@ -137,6 +137,17 @@ class Restobar_Menu extends Widget_Base{
 				]
 			]
 		);
+		// Active Menu Item Color
+		$this->add_control(
+			'active_menu_color',
+			[
+				'label' => __('Active Menu Item Color', 'plugin-name'),
+				'type' => Controls_Manager::COLOR,
+				'selectors' => [
+					'{{WRAPPER}} .menu-item.current-menu-item > a' => 'color: {{VALUE}};',
+				],
+			]
+		);
 		$this->add_group_control(
 			Group_Control_Typography::get_type(),
 			[
