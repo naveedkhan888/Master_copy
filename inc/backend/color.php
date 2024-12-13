@@ -113,6 +113,7 @@ if(!function_exists('restobar_color_scheme')){
 				background: '.restobar_get_option('main_color').' !important;
 			}
 			.post-box .entry-meta .btn-details:hover, 
+			.blog-post .tagcloud a:hover, 
 			.widget .tagcloud a:hover,
 			.icon-box-1 .icon-main{background: '.hex2rgba(restobar_get_option('main_color'), 0.1).';}
 			.team-3 .team-thumb a:before{background: '.hex2rgba(restobar_get_option('main_color'), 0.8).';}
