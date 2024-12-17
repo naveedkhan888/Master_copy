@@ -1964,7 +1964,7 @@ Vertical Menu
 
 /* Optional: Add border and separate items */
 .vertical-services-menu li {
-    border-bottom: 1px solid #e9ecef;
+    border-bottom: 1px solid #00ae6c17;
 }
 
 .vertical-services-menu li:last-child {
@@ -1976,6 +1976,22 @@ Vertical Menu
     .vertical-services-navigation {
         max-width: 100%;
     }
+}
+
+.vertical-services-menu li a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.vertical-services-menu li a .left-icon,
+.vertical-services-menu li a .right-icon {
+    display: inline-flex;
+    align-items: center;
+}
+
+.vertical-services-menu li a .menu-item-text {
+    flex-grow: 1;
 }
 
 /*--------------------------------------------------------------
