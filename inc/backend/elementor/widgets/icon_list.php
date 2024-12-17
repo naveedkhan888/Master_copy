@@ -21,32 +21,12 @@ class Restobar_Icon_List extends Widget_Base {
         return [ 'category_restobar' ];
     }
 
-    // New method to get layout types
-    public static function get_list_layout_types() {
-        return [
-            'default' => __( 'Default (Vertical)', 'restobar' ),
-            'inline' => __( 'Inline', 'restobar' ),
-        ];
-    }
-
     protected function register_controls() {
         // Content Section
         $this->start_controls_section(
             'content_section',
             [
                 'label' => __( 'Icon List', 'restobar' ),
-            ]
-        );
-
-        // Layout Type Control
-        $this->add_control(
-            'list_layout',
-            [
-                'label' => __( 'Layout', 'restobar' ),
-                'type' => Controls_Manager::SELECT,
-                'default' => 'default',
-                'options' => self::get_list_layout_types(),
-                'prefix_class' => 'xp-icon-list-layout-',
             ]
         );
 
@@ -142,14 +122,6 @@ class Restobar_Icon_List extends Widget_Base {
         $this->end_controls_section();
 
         // Style Section
-        $this->start_controls_section(
-            'style_section',
-            [
-                'label' => __( 'Icon List Style', 'restobar' ),
-                'tab'   => Controls_Manager::TAB_STYLE,
-            ]
-        );
-
         $this->start_controls_section(
             'style_section',
             [
@@ -266,7 +238,6 @@ class Restobar_Icon_List extends Widget_Base {
 
     protected function render() {
         $settings = $this->get_settings_for_display();
-        $layout = $settings['list_layout'] ?? 'default';
         ?>
         <div class="xp-icon-list">
             <?php foreach ( $settings['icon_list'] as $index => $item ) : 
@@ -301,23 +272,6 @@ class Restobar_Icon_List extends Widget_Base {
                 </div>
             <?php endforeach; ?>
         </div>
-        <?php
-    }
-
-    // Add custom CSS for inline layout
-    protected function content_template() {
-        ?>
-        <style>
-            .xp-icon-list-layout-inline .xp-icon-list {
-                display: flex;
-                align-items: center;
-                flex-wrap: wrap;
-            }
-            .xp-icon-list-layout-inline .xp-icon-list-item {
-                display: inline-flex;
-                align-items: center;
-            }
-        </style>
         <?php
     }
 }
