@@ -1994,6 +1994,20 @@ Vertical Menu
     flex-grow: 1;
 }
 
+.vertical-services-menu a::after {
+            content: '\f105'; /* Font Awesome chevron-right icon */
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            color: #007bff;
+            opacity: 0;
+            transform: translateX(-10px);
+            transition: all 0.3s ease;
+        }
+.vertical-services-menu a:hover::after {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
 /*--------------------------------------------------------------
 ## Page Header
 --------------------------------------------------------------*/
