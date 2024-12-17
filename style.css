@@ -1905,6 +1905,82 @@ a:hover, a:active {
     max-height: 47px;
   }
 }
+
+
+
+/*--------------------------------------------------------------
+Vertical Menu
+-------------------------------------------------------------*/
+/* Modern Vertical Services Navigation Styling */
+.vertical-services-navigation {
+    max-width: 300px;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.vertical-services-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.vertical-services-menu li {
+    transition: all 0.3s ease;
+}
+
+.vertical-services-menu a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.vertical-services-menu a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(0,123,255,0.1), transparent);
+    transition: all 0.5s ease;
+}
+
+.vertical-services-menu li:hover {
+    background-color: rgba(0,123,255,0.05);
+}
+
+.vertical-services-menu a:hover {
+    color: #007bff;
+    padding-left: 30px;
+}
+
+.vertical-services-menu a:hover::before {
+    left: 100%;
+}
+
+/* Optional: Add border and separate items */
+.vertical-services-menu li {
+    border-bottom: 1px solid #e9ecef;
+}
+
+.vertical-services-menu li:last-child {
+    border-bottom: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .vertical-services-navigation {
+        max-width: 100%;
+    }
+}
+
 /*--------------------------------------------------------------
 ## Page Header
 --------------------------------------------------------------*/
