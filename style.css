@@ -1949,7 +1949,8 @@ Vertical Menu
     transition: all 0.5s ease;
 }
 
-.vertical-services-menu li:hover {
+.vertical-services-menu li:hover, 
+.vertical-services-menu .current-menu-item {
     background-color: rgba(0,174,108,0.05);
 }
 
@@ -1958,7 +1959,8 @@ Vertical Menu
     padding-left: 30px;
 }
 
-.vertical-services-menu a:hover::before {
+.vertical-services-menu a:hover::before, 
+.vertical-services-menu .current-menu-item a::before {
     left: 100%;
 }
 
@@ -1997,13 +1999,14 @@ Vertical Menu
 
 .vertical-services-menu a::after {
             content: '\f124'; /* Font Awesome chevron-right icon */
-            font-family: 'xpicon !important';
+            font-family: xpicon !important;
             font-weight: 900;
             opacity: 0;
             transform: translateX(-10px);
             transition: all 0.3s ease;
         }
-.vertical-services-menu a:hover::after {
+.vertical-services-menu a:hover::after, 
+.vertical-services-menu .current-menu-item a::after {
             opacity: 1;
             transform: translateX(0);
         }
