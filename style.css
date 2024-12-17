@@ -1982,6 +1982,7 @@ Vertical Menu
     display: flex;
     align-items: center;
     gap: 10px;
+    justify-content: space-between;
 }
 
 .vertical-services-menu li a .left-icon,
@@ -1995,10 +1996,9 @@ Vertical Menu
 }
 
 .vertical-services-menu a::after {
-            content: '\f105'; /* Font Awesome chevron-right icon */
-            font-family: 'Font Awesome 5 Free';
+            content: '\f124'; /* Font Awesome chevron-right icon */
+            font-family: 'xpicon !important';
             font-weight: 900;
-            color: #007bff;
             opacity: 0;
             transform: translateX(-10px);
             transition: all 0.3s ease;
