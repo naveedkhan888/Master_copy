@@ -948,6 +948,16 @@ td {
 .elementor-editor-active .tcg-smoke-cursor {
   display: none !important;
 }
+.xp-icon-list-layout-inline .xp-icon-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.xp-icon-list-layout-inline .xp-icon-list-item {
+    display: inline-flex;
+    align-items: center;
+}
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
