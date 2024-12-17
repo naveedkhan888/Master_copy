@@ -981,6 +981,9 @@ td {
   outline: none;
   position: relative;
 }
+.elementor-align-justify .xptf-btn {
+  width: 100%;
+}
 .xptf-btn:hover, .xptf-btn:focus {
   background: #1e73be;
 }
