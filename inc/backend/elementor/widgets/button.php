@@ -59,6 +59,10 @@ class Restobar_Button extends Widget_Base {
                         'title' => __( 'Right', 'restobar' ),
                         'icon' => 'eicon-text-align-right',
                     ],
+                    'justify' => [
+                        'title' => __( 'Justify', 'restobar' ),
+                        'icon' => 'eicon-text-align-justify',
+                    ],
                 ],
                 'prefix_class' => 'elementor%s-align-',
                 'default' => '',
