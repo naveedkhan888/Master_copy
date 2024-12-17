@@ -1954,7 +1954,8 @@ Vertical Menu
     background-color: rgba(0,174,108,0.05);
 }
 
-.vertical-services-menu a:hover {
+.vertical-services-menu a:hover, 
+.vertical-services-menu .current-menu-item a {
     color: #00ae6c;
     padding-left: 30px;
 }
