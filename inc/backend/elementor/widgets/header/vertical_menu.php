@@ -3,6 +3,63 @@ namespace Elementor;
 
 if (!defined('ABSPATH')) exit; // Exit if accessed directly
 
+// Custom Walker Class (moved outside the main class)
+class Restobar_Vertical_Menu_Walker extends \Walker_Nav_Menu {
+    private $settings;
+
+    public function __construct($settings) {
+        $this->settings = $settings;
+    }
+
+    public function start_el(&$output, $item, $depth = 0, $args = null, $id = 0) {
+        $indent = ($depth) ? str_repeat("\t", $depth) : '';
+        
+        $classes = empty($item->classes) ? array() : (array) $item->classes;
+        $classes[] = 'menu-item-' . $item->ID;
+
+        $class_names = join(' ', apply_filters('nav_menu_css_class', array_filter($classes), $item, $args, $depth));
+        $class_names = ' class="' . esc_attr($class_names) . '"';
+
+        $output .= $indent . '<li' . $class_names . '>';
+
+        $attributes = !empty($item->attr_title) ? ' title="' . esc_attr($item->attr_title) . '"' : '';
+        $attributes .= !empty($item->target) ? ' target="' . esc_attr($item->target) . '"' : '';
+        $attributes .= !empty($item->xfn) ? ' rel="' . esc_attr($item->xfn) . '"' : '';
+        $attributes .= !empty($item->url) ? ' href="' . esc_attr($item->url) . '"' : '';
+
+        // Left Icon HTML
+        $left_icon_html = '';
+        if (isset($this->settings['show_left_icon']) && $this->settings['show_left_icon'] === 'yes') {
+            $left_icon = $this->settings['left_icon'];
+            $left_icon_html = sprintf(
+                '<span class="left-icon %s" aria-hidden="true"></span>',
+                esc_attr($left_icon['value'])
+            );
+        }
+
+        // Right Icon HTML
+        $right_icon_html = '';
+        if (isset($this->settings['show_right_icon']) && $this->settings['show_right_icon'] === 'yes') {
+            $right_icon = $this->settings['right_icon'];
+            $right_icon_html = sprintf(
+                '<span class="right-icon %s" aria-hidden="true"></span>',
+                esc_attr($right_icon['value'])
+            );
+        }
+
+        // Construct Menu Item
+        $item_output = $args->before;
+        $item_output .= '<a' . $attributes . '>';
+        $item_output .= $left_icon_html;
+        $item_output .= '<span class="menu-item-text">' . $item->title . '</span>';
+        $item_output .= $right_icon_html;
+        $item_output .= '</a>';
+        $item_output .= $args->after;
+
+        $output .= apply_filters('walker_nav_menu_start_el', $item_output, $item, $depth, $args);
+    }
+}
+
 class Restobar_Vertical_Menu extends Widget_Base {
     // Basic Widget Information
     public function get_name() {
@@ -232,63 +289,6 @@ class Restobar_Vertical_Menu extends Widget_Base {
         return $options;
     }
 
-    // Custom Walker for Menu Rendering
-    protected class Vertical_Menu_Walker extends \Walker_Nav_Menu {
-        private $settings;
-
-        public function __construct($settings) {
-            $this->settings = $settings;
-        }
-
-        public function start_el(&$output, $item, $depth = 0, $args = null, $id = 0) {
-            $indent = ($depth) ? str_repeat("\t", $depth) : '';
-            
-            $classes = empty($item->classes) ? array() : (array) $item->classes;
-            $classes[] = 'menu-item-' . $item->ID;
-
-            $class_names = join(' ', apply_filters('nav_menu_css_class', array_filter($classes), $item, $args, $depth));
-            $class_names = ' class="' . esc_attr($class_names) . '"';
-
-            $output .= $indent . '<li' . $class_names . '>';
-
-            $attributes = !empty($item->attr_title) ? ' title="' . esc_attr($item->attr_title) . '"' : '';
-            $attributes .= !empty($item->target) ? ' target="' . esc_attr($item->target) . '"' : '';
-            $attributes .= !empty($item->xfn) ? ' rel="' . esc_attr($item->xfn) . '"' : '';
-            $attributes .= !empty($item->url) ? ' href="' . esc_attr($item->url) . '"' : '';
-
-            // Left Icon HTML
-            $left_icon_html = '';
-            if ($this->settings['show_left_icon'] === 'yes') {
-                $left_icon = $this->settings['left_icon'];
-                $left_icon_html = sprintf(
-                    '<span class="left-icon %s" aria-hidden="true"></span>',
-                    esc_attr($left_icon['value'])
-                );
-            }
-
-            // Right Icon HTML
-            $right_icon_html = '';
-            if ($this->settings['show_right_icon'] === 'yes') {
-                $right_icon = $this->settings['right_icon'];
-                $right_icon_html = sprintf(
-                    '<span class="right-icon %s" aria-hidden="true"></span>',
-                    esc_attr($right_icon['value'])
-                );
-            }
-
-            // Construct Menu Item
-            $item_output = $args->before;
-            $item_output .= '<a' . $attributes . '>';
-            $item_output .= $left_icon_html;
-            $item_output .= '<span class="menu-item-text">' . $item->title . '</span>';
-            $item_output .= $right_icon_html;
-            $item_output .= '</a>';
-            $item_output .= $args->after;
-
-            $output .= apply_filters('walker_nav_menu_start_el', $item_output, $item, $depth, $args);
-        }
-    }
-
     // Widget Render Method
     protected function render() {
         $settings = $this->get_settings_for_display();
@@ -297,7 +297,7 @@ class Restobar_Vertical_Menu extends Widget_Base {
         $active_mmenu = in_array('xp_mega-menu/xp_mega-menu.php', apply_filters('active_plugins', get_option('active_plugins')));
 
         // Prepare custom walker
-        $walker = new Vertical_Menu_Walker($settings);
+        $walker = new Restobar_Vertical_Menu_Walker($settings);
         ?>
         <nav class="vertical-services-navigation">
             <?php
