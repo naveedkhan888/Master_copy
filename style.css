@@ -1930,7 +1930,7 @@ Vertical Menu
 
 .vertical-services-menu a {
     display: block;
-    padding: 15px 20px;
+    padding: 10px 0px;
     text-decoration: none;
     font-weight: 500;
     position: relative;
@@ -1957,7 +1957,8 @@ Vertical Menu
 .vertical-services-menu a:hover, 
 .vertical-services-menu .current-menu-item a {
     color: #00ae6c;
-    padding-left: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .vertical-services-menu a:hover::before, 
